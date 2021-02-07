@@ -1,0 +1,2569 @@
+# ::id 1.1.1
+# ::snt Private rights must conform to the public welfare.
+# ::ltext (1) Private rights must conform to the public welfare.
+(o / obligate-01
+      :ARG1 (r / right-05
+            :ARG1-of (p / private-02))
+      :ARG2 (c / conform-01
+            :ARG1 r
+            :ARG2 (w / welfare
+                  :ARG1-of (p2 / public-02))))
+
+# ::id 1.2.1
+# ::snt The exercise of rights and performance of duties must be done in good faith.
+# ::ltext (2) The exercise of rights and performance of duties must be done in good faith.
+(o / obligate-01
+      :ARG2 (b / be-done-08
+            :ARG1 (e / excercise
+                  :part-of (a / and
+                        :op1 (r / right-05)
+                        :op2 (p / perform-02)
+                        :part-of (d / duty)))
+            :manner (f / faith
+                  :mod (g / good-02))))
+
+# ::id 1.3.1
+# ::snt No abuse of rights is permitted.
+# ::ltext (3) No abuse of rights is permitted.
+(p / permit-01 :polarity -
+      :ARG1 (a / abuse-01
+            :ARG1 (r / right-05)))
+
+# ::id 2.1.1
+# ::snt This Code must be construed in accordance with honoring the dignity of individuals and the essential equality of both sexes.
+# ::ltext This Code must be construed in accordance with honoring the dignity of individuals and the essential equality of both sexes.
+(c / construe-01
+      :ARG1 (c2 / code
+            :domain (t / this))
+      :ARG2-of (o / obligate-01)
+      :manner (a / and
+            :op1 (a2 / accord-02
+                  :ARG2 (h / honor-02
+                        :ARG1 (d / dignity
+                              :poss (p / person))))
+            :op2 (e / equal-01
+                  :ARG1 (g / gender :quant 2)
+                  :mod (e2 / essential))))
+
+# ::id 3.1.1
+# ::snt The enjoyment of private rights shall commence at birth.
+# ::ltext (1) The enjoyment of private rights shall commence at birth.    
+(c / commence-01
+      :ARG1 (t / thing
+            :ARG0-of (e2 / enjoy-01
+                  :ARG1 (r / right-05
+                        :ARG1-of (p / private-02))))
+      :time (b / bear-02))
+	  
+# ::id 3.2.1
+# ::snt Unless otherwise provided by applicable laws, regulations or treaties, foreign nationals shall enjoy private rights.
+# ::ltext (2) Unless otherwise provided by applicable laws, regulations or treaties, foreign nationals shall enjoy private rights.
+(e / enjoy-01
+      :ARG0 (n / national
+            :mod (f / foreign))
+      :ARG1 (r / right-05
+            :ARG1-of (p / private-02))
+      :condition (p2 / provide-01 :polarity -
+            :ARG0 (o / or
+                  :op1 (l / law)
+                  :op2 (r2 / regulate-01)
+                  :op2 (t / treaty)
+                  :mod (a / applicable))))
+
+# ::id 4.1.1
+# ::snt The age of majority is reached when a person has reached the age of 20.
+# ::ltext The age of majority is reached when a person has reached the age of 20.
+(r / reach-01
+      :ARG1 (a / age
+            :mod (m / majority))
+      :time (r2 / reach-01
+            :ARG0 (p / person)
+            :ARG1 (a2 / age
+                  :quant (t / temporal-quantity :quant 20
+                        :unit (y / year)))))
+
+# ::id 5.1.1
+# ::snt A minor must obtain the consent of his/her statutory agent to perform any juristic act; provided, however, that, this shall not apply to an act merely intended to acquire a right or to be relieved of a duty.
+# ::ltext (1) A minor must obtain the consent of his/her statutory agent to perform any juristic act; provided, however, that, this shall not apply to an act merely intended to acquire a right or to be relieved of a duty.
+(c2 / contrast-01
+      :ARG1 (o / obligate-01
+            :ARG2 (o2 / obtain-01
+                  :ARG0 (p / person
+                        :mod (m / minor-02))
+                  :ARG1 (c / consent-01)
+                  :ARG2 (a / agent)
+                  :purpose (p2 / perform-02
+                        :ARG1 (a2 / act-02
+                              :mod (j / juristic)))))
+      :ARG2 (a3 / apply-02 :polarity -
+            :ARG0 o2
+            :ARG2 (a4 / act
+                  :ARG0-of (i2 / intend-01
+                        :ARG1 (o3 / or
+                              :op1 (a5 / acquire-01
+                                    :ARG1 (r / right))
+                              :op2 (r2 / relieve-01
+                                    :ARG1 (d / duty)))
+                        :mod (m2 / merely)))))
+
+# ::id 5.2.1
+# ::snt A juristic act in contravention of the provision of the precedding paragraph may be rescinded.
+# ::ltext (2) A juristic act in contravention of the provision of the precedding paragraph may be rescinded.
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG1 (a / act
+                  :mod (j / juristic)
+                  :ARG0-of (v / violate-01
+                        :ARG1 (p4 / provision
+                              :poss (p2 / paragraph
+                                    :direction (p3 / precedding)))))))
+									
+# ::id 5.3.1
+# ::snt Notwithstanding the provision of paragraph 1, in cases the statutory agent permits the disposition of property by specifying the purpose thereof, a minor may freely dispose of the same to the extent of such purpose.
+# ::ltext (3) Notwithstanding the provision of paragraph 1, in cases the statutory agent permits the disposition of property by specifying the purpose thereof, a minor may freely dispose of the same to the extent of such purpose. 
+(p / possible-01
+      :ARG1 (d / dispose-01
+            :ARG0 (p4 / person
+                  :ARG1-of (m / minor-02))
+            :ARG1 (t / thing
+                  :mod (p5 / property))
+            :ARG3-of (f / free-04))
+      :condition (p2 / permit-01
+            :ARG0 (a / agent
+                  :mod (s / statutory))
+            :ARG1 (d2 / dispose-01
+                  :ARG1 t
+                  :manner (s2 / specify-01
+                        :ARG1 (p6 / purpose
+                              :poss d2)))
+            :ARG2 p4)
+      :concession (p3 / provision
+            :part-of (p8 / paragraph
+                  :ord (o / ordinal-entity :value 1))))
+
+# ::id 5.3.2
+# ::snt The same shall apply in cases his/her statutory agent permits the disposition of the property without specifying any purpose.
+# ::ltext The same shall apply in cases his/her statutory agent permits the disposition of the property without specifying any purpose.
+(a / apply-02
+      :ARG1 (l / law
+            :ARG1-of (s3 / same-01))
+      :condition (p / permit-01
+            :ARG0 (a2 / agent
+                  :mod (s / statutory))
+            :ARG1 (d / dispose-02
+                  :ARG1 (p2 / property))
+            :manner (s2 / specify-01 :polarity -
+                  :ARG1 (p3 / purpose))))
+
+# ::id 6.1.1
+# ::snt A minor who is permitted to carry on one or more kinds of business shall have the same capacity to act as a person of the age of majority as far as such business is concerned.
+# ::ltext (1) A minor who is permitted to carry on one or more kinds of business shall have the same capacity to act as a person of the age of majority as far as such business is concerned.
+(h / have-03
+      :ARG0 (p / person
+            :ARG1-of (m / minor-02)
+            :ARG2-of (p2 / permit-01
+                  :ARG1 (c / carry-on-02
+                        :ARG1 (b2 / business
+                              :mod (k / kind
+                                    :quant (o / or :op1 1
+                                          :op2 (m3 / more-than :op1 1)))))))
+      :ARG1 (c2 / capacity
+            :ARG1-of (h2 / have-degree-91
+                  :ARG2 (p3 / person
+                        :age (a / age-01
+                              :ARG2 (m2 / majority)))
+                  :ARG3 (s2 / same)))
+      :domain (b / business))
+
+# ::id 6.2.1
+# ::snt In the case set forth in the precedding paragraph, if the minor may be unable to perform the relevant business for any reason, his/her statutory agent may revoke or limit permission in accordance with the provisions of Part IV (Relatives).
+# ::ltext (2) In the case set forth in the precedding paragraph, if the minor may be unable to perform the relevant business for any reason, his/her statutory agent may revoke or limit permission in accordance with the provisions of Part IV (Relatives).
+(p / possible-01
+      :ARG1 (o / or
+            :op1 (r / revoke-01
+                  :ARG0 (p2 / person)
+                  :ARG1 (p3 / permit-01))
+            :op2 (l / limit-01
+                  :ARG0 p2
+                  :ARG1 p3)
+            :ARG1-of (a / accord-02
+                  :ARG2 (p4 / provide
+                        :ARG1 (t / thing :name (n / name :op1 "Relatives")
+                              :mod (p5 / part)
+                              :ord (o2 / ordinal-entity :value 4)))))
+      :condition (a2 / and
+            :op1 (c / case-03
+                  :ARG1-of (s / set-01
+                        :ARG2 (t2 / thing
+                              :mod (p9 / paragraph)
+                              :direction (p10 / precedding))))
+            :op2 (p6 / possible-01 :polarity -
+                  :ARG1 (p7 / perform-02
+                        :ARG0 (p8 / person
+                              :ARG1-of (m / minor-02))
+                        :ARG1 (b / business)))))
+
+# ::id 8.1.1
+# ::snt A person who has become subject to the ruling of commencement of guardianship shall be an adult ward, and a guardian of an adult shall be appointed for him/her.
+# ::ltext A person who has become subject to the ruling of commencement of guardianship shall be an adult ward, and a guardian of an adult shall be appointed for him/her.
+(a / and
+      :op1 (a2 / adult
+            :domain (p / person
+                  :ARG1-of (s / subject-01
+                        :ARG2 (c / commence-01
+                              :ARG1 (g / guard-01)))))
+      :op2 (a3 / appoint-01
+            :ARG1 (p2 / person)
+            :ARG2 (g2 / guardian
+                  :poss p)))
+
+# ::id 9.1.1
+# ::snt A juristic act performed by an adult ward may be rescinded; provided, however, that, this shall not apply to any act relating to daily life, such as the purchase of daily household items. 
+# ::ltext A juristic act performed by an adult ward may be rescinded; provided, however, that, this shall not apply to any act relating to daily life, such as the purchase of daily household items. 
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG1 (p2 / perform-02
+                  :ARG0 (p3 / person)
+                  :ARG1 (l / law
+                        :mod (j / juristic))))
+      :condition (a / apply-02 
+			:polarity -
+            :ARG1 r
+            :ARG2 (l2 / law
+                  :ARG1-of (r2 / relate-01
+                        :ARG2 (l3 / life))
+                  :example (p4 / purchase-01
+                        :ARG1 (i2 / item)))))
+
+# ::id 12.1.1
+# ::snt A person who has become subject to the ruling of commencement of curatorship shall be the person under curatorship, and a curator shall be appointed for him/her.
+# ::ltext A person who has become subject to the ruling of commencement of curatorship shall be the person under curatorship, and a curator shall be appointed for him/her.
+(a / and
+      :op1 (u / under
+            :op1 (c / curatorship)
+            :domain (p / person
+                  :ARG1-of (s / subject-01
+                        :ARG2 (c2 / commence-01
+                              :ARG1 c))))
+      :op2 (a3 / appoint-01
+            :ARG1 (p2 / person)
+            :ARG2 (c3 / curator
+                  :poss p)))
+
+# ::id 13.4.1
+# ::snt An act which requires the consent of the curator may be rescinded if it was performed without such consent or any permission in lieu thereof. 
+# ::ltext (4) An act which requires the consent of the curator may be rescinded if it was performed without such consent or any permission in lieu thereof. 
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG1 (a / act
+                  :ARG0-of (r2 / require-01
+                        :ARG1 (c / consent-01
+                              :ARG0 (p2 / person
+                                    :mod (a2 / curator))))))
+      :condition (p3 / perform-02
+            :ARG1 a
+            :ARG0-of (h / have-03 :polarity -
+                  :ARG1 (o / or
+                        :op1 c
+                        :op2 (p4 / permit-01
+                              :ARG1-of (i2 / instead-of-91
+                                    :ARG2 c))))))
+
+# ::id 14.1.1
+# ::snt When the cause provided in the main clause of Article 11 ceases to exist, the family court must rescind the order of the commencement of curatorship at the request of the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian of a minor, the supervisor of the guardian of a minor, the curator, the supervisor of the curator, or a public prosecutor. 
+# ::ltext (1) When the cause provided in the main clause of Article 11 ceases to exist, the family court must rescind the order of the commencement of curatorship at the request of the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian of a minor, the supervisor of the guardian of a minor, the curator, the supervisor of the curator, or a public prosecutor. 
+(o / obligate-01
+      :ARG2 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (o2 / order-01
+                  :ARG2 (c2 / commence-01
+                        :ARG1 (c3 / curatorship))))
+      :time (c5 / cease-01
+            :ARG1 (e / exist-01
+                  :ARG1 (c6 / cause
+                        :location (c7 / clause
+                              :mod (m / main)
+                              :part-of (a2 / article
+                                    :ord (o4 / ordinal-entity :value 11))))))
+      :condition (r2 / request-01
+            :ARG0 (o3 / or
+                  :op1 (p / person
+                        :location (q / question))
+                  :op2 (p2 / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG2 (s / spouse)))
+                  :op3 (p3 / person
+                        :ARG0-of (r3 / related-04))
+                  :op4 (p4 / person
+                        :ARG0-of (h3 / have-rel-role-91
+                              :ARG1 (p8 / person
+                                    :ARG1-of (m2 / minor-02))
+                              :ARG2 (g / guardian)))
+                  :op5 (p5 / person
+                        :ARG0-of (h4 / have-rel-role-91
+                              :ARG1 p4
+                              :ARG2 (s2 / supervisor)))
+                  :op6 (p6 / person
+                        :ARG0-of (h5 / have-rel-role-91
+                              :ARG2 (c4 / curator)))
+                  :op7 (p7 / person
+                        :ARG0-of (h6 / have-rel-role-91
+                              :ARG1 p6
+                              :ARG2 (s3 / supervisor)))
+                  :op8 (p9 / person
+                        :mod (p10 / prosecutor)
+                        :ARG1-of (p11 / public-02)))))
+
+# ::id 14.2.1
+# ::snt At the request of the person prescribed in the precedding paragraph, the family court may rescind, in whole or in part, the ruling under paragraph 2 of the precedding Article.
+# ::ltext (2) At the request of the person prescribed in the precedding paragraph, the family court may rescind, in whole or in part, the ruling under paragraph 2 of the precedding Article.
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (r2 / rule-01
+                  :location (p2 / paragraph
+                        :ord (o / ordinal-entity :value 2)
+                        :part-of (a / article
+                              :direction (p3 / precedding))))
+            :manner (o2 / or
+                  :op1 (w / whole)
+                  :op2 (p4 / partial-01)))
+      :condition (r3 / request-01
+            :ARG0 (p5 / person
+                  :ARG1-of (p6 / prescribe-01
+                        :location (p7 / paragraph
+                              :direction p3)))))
+
+# ::id 15.1.1
+# ::snt With respect to any person who has insufficient capacity to appreciate right or wrong due to any mental disability, the family court may rule the commencement of assistance upon a request by the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian, the supervisor of the guardian, the curator, the supervisor of the curator, or a public prosecutor; provided, however, that, this shall not apply to any person who has the cause set forth in Article 7 or the main clause of Article 11.
+# ::ltext (1) With respect to any person who has insufficient capacity to appreciate right or wrong due to any mental disability, the family court may rule the commencement of assistance upon a request by the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian, the supervisor of the guardian, the curator, the supervisor of the curator, or a public prosecutor; provided, however, that, this shall not apply to any person who has the cause set forth in Article 7 or the main clause of Article 11.
+(c8 / contrast-01
+      :ARG1 (c9 / commence-01
+            :ARG0 (c10 / court
+                  :mod (f2 / family))
+            :ARG1 (p12 / person
+                  :ARG0-of (a / assist-01))
+            :condition (r2 / request-01
+                  :ARG0 (o3 / or
+                        :op1 (p / person
+                              :location (q / question))
+                        :op2 (p2 / person
+                              :ARG0-of (h / have-rel-role-91
+                                    :ARG2 (s / spouse)))
+                        :op3 (p3 / person
+                              :ARG0-of (r3 / related-04))
+                        :op4 (p4 / person
+                              :ARG0-of (h3 / have-rel-role-91
+                                    :ARG1 (p8 / person
+                                          :ARG1-of (m2 / minor-02))
+                                    :ARG2 (g / guardian)))
+                        :op5 (p5 / person
+                              :ARG0-of (h4 / have-rel-role-91
+                                    :ARG1 p4
+                                    :ARG2 (s2 / supervisor)))
+                        :op6 (p6 / person
+                              :ARG0-of (h5 / have-rel-role-91
+                                    :ARG2 (c4 / curator)))
+                        :op7 (p7 / person
+                              :ARG0-of (h6 / have-rel-role-91
+                                    :ARG1 p6
+                                    :ARG2 (s3 / supervisor)))
+                        :op8 (p9 / person
+                              :mod (p10 / prosecutor)
+                              :ARG1-of (p11 / public-02)))))
+      :ARG2 (a2 / apply-02 :polarity -
+            :ARG1 c9
+            :ARG1 (p13 / person
+                  :ARG0-of (h2 / have-03
+                        :ARG1 (c / cause
+                              :ARG1-of (s4 / set-01
+                                    :ARG2 (o2 / or
+                                          :op1 (a3 / article
+                                                :ord (o / ordinal-entity :value 7))
+                                          :op2 (c2 / clause
+                                                :mod (m / main)
+                                                :part-of (a4 / article
+                                                      :ord (o4 / ordinal-entity :value 11))))))))))
+
+# ::id 15.2.1
+# ::snt The ruling of commencement of assistance at the request of any person other than the person in question shall require the consent of the person in question.
+# ::ltext (2) The ruling of commencement of assistance at the request of any person other than the person in question shall require the consent of the person in question.
+(r / require-01
+      :ARG1 (c / consent-01
+            :ARG0 (p / person
+                  :part-of (q / question-01
+                        :poss r2)))
+      :ARG2 (r2 / rule-01
+            :ARG1 (c2 / commence-01
+                  :ARG1 (a / assist-01)))
+      :condition (r3 / request-01
+            :ARG0 (p4 / person
+                  :mod (o / other
+                        :compared-to p))))
+
+# ::id 15.3.1
+# ::snt The ruling of commencement of assistance must be made concurrent with the ruling under paragraph 1 of Article 17 or the ruling under paragraph 1 of Article 876-9.
+# ::ltext (3) The ruling of commencement of assistance must be made concurrent with the ruling under paragraph 1 of Article 17 or the ruling under paragraph 1 of Article 876-9.
+(o / obligate-01
+      :ARG2 (m / make-01
+            :ARG1 (r / rule-01
+                  :ARG1 (c / commence-01
+                        :ARG1 (a / assist-01)))
+            :manner (c2 / concurrent-02
+                  :ARG1 r
+                  :ARG2 (o4 / or
+                        :op1 (r2 / rule-01
+                              :location (p / paragraph
+                                    :ord (o2 / ordinal-entity :value 1)
+                                    :part-of (a2 / article
+                                          :ord (o3 / ordinal-entity :value 17))))
+                        :op2 (r3 / rule-01
+                              :location (p2 / paragraph
+                                    :ord (o5 / ordinal-entity :value 1)
+                                    :part-of (p3 / paragraph
+                                          :ord (o6 / ordinal-entity :value "876-9"))))))))
+
+# ::id 16.1.1
+# ::snt A person who has become subject to the ruling of commencement of assistance shall be a person under assistance, and an assistant shall be appointed for him/her.
+# ::ltext A person who has become subject to the ruling of commencement of assistance shall be a person under assistance, and an assistant shall be appointed for him/her.
+(a / and
+      :op1 (u / under
+            :op1 (a2 / assistance)
+            :mod (p / person
+                  :ARG1-of (s / subject-01
+                        :ARG2 (c / commence-01
+                              :ARG2 a2))))
+      :op2 (a3 / appoint-01
+            :ARG1 (p2 / person)
+            :ARG2 (a4 / assist-01
+                  :ARG0 p)))
+
+# ::id 17.2.1
+# ::snt The ruling set forth in the precedding paragraph at the request of any person other than the person in question shall require the consent of the person in question.
+# ::ltext (2) The ruling set forth in the precedding paragraph at the request of any person other than the person in question shall require the consent of the person in question.
+(r / require-01
+      :ARG1 (c / consent-01
+            :ARG0 (p / person
+                  :part-of (q / question-01
+                        :poss r2)))
+      :ARG2 (r2 / rule-01
+            :ARG1-of (s / set-01
+                  :ARG2 (p2 / paragraph
+                        :direction (p3 / precedding))))
+      :condition (r3 / request-01
+            :ARG0 (p4 / person
+                  :mod (o / other
+                        :compared-to p))))
+
+# ::id 17.4.1
+# ::snt An act which requires the consent of the assistant may be rescinded if it was performed without such consent or any permission in lieu thereof.
+# ::ltext (4) An act which requires the consent of the assistant may be rescinded if it was performed without such consent or any permission in lieu thereof.
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG1 (a / act
+                  :ARG0-of (r2 / require-01
+                        :ARG1 (c / consent-01
+                              :ARG0 (p2 / person
+                                    :mod (a2 / assistant))))))
+      :condition (p3 / perform-02
+            :ARG1 a
+            :ARG0-of (h / have-03
+                  :ARG1 (o / or
+                        :op1 c
+                        :op2 (p4 / permit-01
+                              :ARG1-of (i2 / instead-of-91
+                                    :ARG2 c))))))
+
+# ::id 18.1.1
+# ::snt When the cause provided in the main clause of paragraph 1 of Article 15 ceases to exist, the family court must rescind the ruling of commencement of assistance at the request of the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian of a minor, the supervisor of the guardian of a minor, the assistant, the supervisor of the assistant, or a public prosecutor. 
+# ::ltext (1) When the cause provided in the main clause of paragraph 1 of Article 15 ceases to exist, the family court must rescind the ruling of commencement of assistance at the request of the person in question, his/her spouse, any relative within the fourth degree of kinship, the guardian of a minor, the supervisor of the guardian of a minor, the assistant, the supervisor of the assistant, or a public prosecutor. 
+(o / obligate-01
+      :ARG2 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (o2 / order-01
+                  :ARG2 (c2 / commence-01
+                        :ARG1 (a / assist-01))))
+      :condition (c5 / cease-01
+            :ARG1 (e / exist-01
+                  :ARG1 (c6 / cause
+                        :location (c7 / clause
+                              :mod (m / main)
+                              :part-of (p12 / paragraph
+                                    :part-of (a2 / article
+                                          :ord (o4 / ordinal-entity :value 15))
+                                    :ord (o5 / ordinal-entity :value 1))))))
+      :condition (r2 / request-01
+            :ARG0 (o3 / or
+                  :op1 (p / person
+                        :location (q / question))
+                  :op2 (p2 / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG2 (s / spouse)))
+                  :op3 (p3 / person
+                        :ARG0-of (r3 / related-04))
+                  :op4 (p4 / person
+                        :ARG0-of (h3 / have-rel-role-91
+                              :ARG1 (p8 / person
+                                    :ARG1-of (m2 / minor-02))
+                              :ARG2 (g / guardian)))
+                  :op5 (p5 / person
+                        :ARG0-of (h4 / have-rel-role-91
+                              :ARG1 p4
+                              :ARG2 (s2 / supervisor)))
+                  :op6 (p6 / person
+                        :ARG0-of (a3 / assist-01))
+                  :op7 (p7 / person
+                        :ARG0-of (h6 / have-rel-role-91
+                              :ARG1 p6
+                              :ARG2 (s3 / supervisor)))
+                  :op8 (p9 / person
+                        :mod (p10 / prosecutor)
+                        :ARG1-of (p11 / public-02)))))
+
+# ::id 18.2.1
+# ::snt At the request of the person prescribed in the precedding paragraph, the family court may rescind, in whole or in part, the ruling under paragraph 1 of the precedding Article. 
+# ::ltext (2) At the request of the person prescribed in the precedding paragraph, the family court may rescind, in whole or in part, the ruling under paragraph 1 of the precedding Article. 
+(p / possible-01
+      :ARG1 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (r2 / rule-01
+                  :location (p2 / paragraph
+                        :ord (o / ordinal-entity :value 1)
+                        :part-of (a / article
+                              :direction (p3 / precedding))))
+            :manner (o2 / or
+                  :op1 (w / whole)
+                  :op2 (p4 / partial-01)))
+      :condition (r3 / request-01
+            :ARG0 (p5 / person
+                  :ARG1-of (p6 / prescribe-01
+                        :location (p7 / paragraph
+                              :direction p3)))))
+
+# ::id 18.3.1
+# ::snt In cases the ruling under paragraph 1 of the precedding Article and the order under paragraph 1 of Article 876-9 are to be rescinded in their entirety, the family court must rescind the ruling of commencement of assistance.
+# ::ltext (3) In cases the ruling under paragraph 1 of the precedding Article and the order under paragraph 1 of Article 876-9 are to be rescinded in their entirety, the family court must rescind the ruling of commencement of assistance.
+(o / obligate-01
+      :ARG2 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (r2 / rule-01
+                  :ARG1 (c2 / commence-01
+                        :ARG1 (a / assist-01))))
+      :condition (r3 / rescind-01
+            :ARG1 (a2 / and
+                  :op1 (r4 / rule
+                        :location (p2 / paragraph
+                              :ord (o3 / ordinal-entity :value 1)
+                              :part-of (a3 / article
+                                    :direction (p3 / precedding))))
+                  :op2 (o2 / order
+                        :location (p4 / paragraph
+                              :ord (o4 / ordinal-entity :value 1)
+                              :part-of (a4 / article
+                                    :ord (o5 / ordinal-entity :value "876-9")))))
+            :extent (e / entire))) 
+
+# ::id 19.1.1
+# ::snt In cases any ruling for commencement of guardianship is to be made, and the person in question is a person under curatorship or the person under assistance, the family court must rescind the ruling of commencement of curatorship or commencement of assistance pertaining to such person in question.
+# ::ltext (1) In cases any ruling for commencement of guardianship is to be made, and the person in question is a person under curatorship or the person under assistance, the family court must rescind the ruling of commencement of curatorship or commencement of assistance pertaining to such person in question.
+(o / obligate-01
+      :ARG2 (r / rescind-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (r2 / rule-01
+                  :ARG1 (o2 / or
+                        :op1 (c2 / commence-01
+                              :ARG1 (c4 / curatorship))
+                        :op2 (c3 / commence-01
+                              :ARG1 (a / assist-01)))
+                  :ARG0-of (p / pertain-01)))
+      :condition (a2 / and
+            :op1 (m / make-01
+                  :ARG1 (r3 / rule-01
+                        :ARG1 (c5 / commence-01
+                              :ARG1 (g / guardianship))))
+            :op2 (p2 / person
+                  :ARG1-of (m2 / mention-01
+                        :location (q / question))
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG3 (o3 / or
+                              :op1 (c6 / curator)
+                              :op2 (a3 / assist-01))))))
+
+# ::id 19.2.1
+# ::snt The provisions of the precedding paragraph shall apply mutatis mutandis in cases where the person in question, upon ruling of commencement of curatorship, is an adult ward or a person under assistance, or in cases where the person in question is, at the time of the ruling for commencement of assistance, an adult ward or a person under curatorship.
+# ::ltext (2) The provisions of the precedding paragraph shall apply mutatis mutandis in cases where the person in question, upon ruling of commencement of curatorship, is an adult ward or a person under assistance, or in cases where the person in question is, at the time of the ruling for commencement of assistance, an adult ward or a person under curatorship. 
+(a / apply-02
+      :ARG1 (p / provide-01
+            :ARG1 (p2 / paragraph
+                  :direction (p3 / precedding)))
+      :manner (m / multatis-multadis)
+      :condition (o / or
+            :op1 (p4 / person
+                  :ARG1-of (m2 / mention-01
+                        :location (q / question))
+                  :domain (o2 / or
+                        :op1 (u / under
+                              :op1 (a2 / assistance))
+                        :op2 (a3 / adult)))
+            :op2 (p5 / person
+                  :ARG1-of (m3 / mention
+                        :location (q2 / question))
+                  :domain (o3 / or
+                        :op1 (u2 / under
+                              :op1 (c / curatorship))
+                        :op2 (a5 / adult)))))
+
+# ::id 20.1.2
+# ::snt In such case, if such person fails to send any definite answer within such period, he/she is deemed to have ratified such act. 
+# ::ltext In such case, if such person fails to send any definite answer within such period, he/she is deemed to have ratified such act. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / deem-01
+      :ARG0 (p / person)
+      :ARG1 (r / ratify-01
+            :ARG1 d
+            :ARG2 (a / act))
+      :condition (f / fail-01
+            :ARG1 p
+            :ARG2 (s / send-01
+                  :ARG0 p
+                  :ARG1 (a2 / answer-01
+                        :mod (d2 / definite))
+                  :time (p2 / period)))
+      :condition (c / case-03
+            :mod (s2 / such)))
+
+# ::id 21.1.1
+# ::snt If a person with limited capacity manipulates any fraudulent means to induce others to believe that he/she is a person with capacity, his/her act may not be rescinded. 
+# ::ltext If a person with limited capacity manipulates any fraudulent means to induce others to believe that he/she is a person with capacity, his/her act may not be rescinded. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(p / possible-01 :polarity -
+      :ARG1 (r / rescind-01
+            :ARG1 (a / act
+                  :poss (p2 / person
+                        :ARG0-of (h2 / have-03
+                              :ARG1 (c2 / capacity
+                                    :mod (l2 / limit-01))))))
+      :condition (m / manipulate-02
+            :ARG0 p2
+            :ARG1 (m2 / mean-01
+                  :mod (f / fraudulent))
+            :purpose (b / believe-01
+                  :ARG0 (p3 / person
+                        :mod (o / other))
+                  :ARG1 (h / have-03
+                        :ARG0 p2
+                        :ARG1 (c / capacity)))))
+
+# ::id 22.1.1
+# ::snt The principal place wherein a person lives shall be his/her domicile.
+# ::ltext The principal place wherein a person lives shall be his/her domicile.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / domicile
+      :poss (p / person)
+      :location (l / live-01
+            :ARG0 p))
+
+# ::id 23.1.1
+# ::snt If the domicile of a person is unknown, his/her residence is deemed to be his/her domicile.
+# ::ltext (1) If the domicile of a person is unknown, his/her residence is deemed to be his/her domicile.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / deem-01
+      :ARG0 (r / reside-01
+            :poss (p / person))
+      :ARG1 (d2 / domicile
+            :poss p)
+      :condition (u / unknown
+            :domain d2))
+
+# ::id 24.1.1
+# ::snt If any temporary domicile is selected for any act, such temporary domicile is deemed to be the domicile as far as such act is concerned.
+# ::ltext If any temporary domicile is selected for any act, such temporary domicile is deemed to be the domicile as far as such act is concerned.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / deem-01
+      :ARG0 (d2 / domicile
+            :mod (t / temporary))
+      :ARG1 (d3 / domicile)
+      :condition (c / concern-02
+            :ARG1 (l / law))
+      :condition (s / select-01
+            :ARG1 d3
+            :ARG3 l))
+
+# ::id 27.1.1
+# ::snt An administrator who is appointed by the family court pursuant to the provision of the precedding two Articles must prepare a list of the property he/she is to administer. 
+# ::ltext (1) An administrator who is appointed by the family court pursuant to the provision of the precedding two Articles must prepare a list of the property he/she is to administer. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(o / obligate-01
+      :ARG2 (p / prepare-01
+            :ARG0 (a / administrator
+                  :ARG1-of (a2 / appoint-01
+                        :ARG0 (c / court
+                              :mod (f / family))
+                        :ARG0-of (p4 / pursue-01
+                              :ARG1 (p2 / provision
+                                    :part-of (a3 / article :quant 2
+                                          :direction (p5 / precedding))))))
+            :ARG1 (l / list-01
+                  :ARG1 (p3 / property
+                        :ARG1-of (a4 / administer-01
+                              :ARG0 a)))))
+
+# ::id 27.1.2
+# ::snt In such case, the expenses incurred shall be disbursed from the property of the absentee.
+# ::ltext In such case, the expenses incurred shall be disbursed from the property of the absentee.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / disburse-01
+      :ARG1 (e / expense
+            :ARG1-of (i2 / incur-01))
+      :ARG3 (p / property
+            :poss (p2 / person
+                  :ARG1-of (a / absent-01)))
+      :condition (c / case-03
+            :domain (s / such)))
+
+# ::id 29.1.1
+# ::snt The family court may require an administrator to provide reasonable security with respect to the administration and return of the property.
+# ::ltext (1) The family court may require an administrator to provide reasonable security with respect to the administration and return of the property.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Tại sao không dùng administrator mà phải là person arg0-of administer.
+(p / possible-01
+      :ARG1 (r / require-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (p2 / provide-01
+                  :ARG1 (s / safe-01
+                        :ARG0 (a / and
+                              :op1 (a2 / administer-01)
+                              :op2 (r2 / return-02))
+                        :ARG1 (p4 / property)))
+            :ARG2 (a3 / administrator)))
+
+# ::id 29.2.1
+# ::snt The family court may grant reasonable remuneration to the administrator from the property of the absentee with due regard to the relationship between the administrator and absentee and other circumstances.
+# ::ltext (2) The family court may grant reasonable remuneration to the administrator from the property of the absentee with due regard to the relationship between the administrator and absentee and other circumstances.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(p / possible-01
+      :ARG1 (g / grant-01
+            :ARG0 (c / court
+                  :mod (f / family))
+            :ARG1 (r / remunerate-01
+                  :ARG1-of (r2 / reasonable-02)
+                  :source (p3 / property
+                        :poss (p4 / person
+                              :ARG1-of (a2 / absent-01))))
+            :ARG2 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 p4
+                        :ARG2 (a / administrator)))))
+
+# ::id 30.1.1
+# ::snt If it is not clear whether the absentee is dead or alive for 7 years, the family court may make the adjudication of disappearance at the request of any interested person.
+# ::ltext (1) If it is not clear whether the absentee is dead or alive for 7 years, the family court may make the adjudication of disappearance at the request of any interested person.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Absentee và disapearance có quan hệ vs nhau.
+(a / adjudicate-01
+      :ARG0 (c / court
+            :mod (f / family))
+      :ARG1 (a2 / appear-01 :polarity -
+            :ARG1 p2)
+      :time (r / request-01
+            :ARG0 (p / person
+                  :ARG0-of (i2 / interest-01)))
+      :condition (c2 / clear-06 :polarity -
+            :ARG1 (o / or
+                  :op1 (d / die-01)
+                  :op2 (l / live-01)
+                  :domain (p2 / person
+                        :ARG1-of (a3 / absent-01)))))
+
+# ::id 31.1.1
+# ::snt Any person who has become the subject of the adjudication of disappearance pursuant to the provision of paragraph 1 of the precedding Article is deemed to have died upon elapse of the period set forth in such paragraph, and a person who is the subject of the adjudication of disappearance pursuant to the provision of paragraph 2 of the same Article is deemed to have died upon the termination of such danger.
+# ::ltext Any person who has become the subject of the adjudication of disappearance pursuant to the provision of paragraph 1 of the precedding Article is deemed to have died upon elapse of the period set forth in such paragraph, and a person who is the subject of the adjudication of disappearance pursuant to the provision of paragraph 2 of the same Article is deemed to have died upon the termination of such danger.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Sua nhieu nhung chua lam xong
+(a / and
+      :op1 (d / deem-01
+            :ARG1 (d2 / die-01
+                  :ARG1 (p / person
+                        :ARG1-of (b / become-01
+                              :ARG2 (s / subject
+                                    :part-of (a2 / adjudication
+                                          :mod (a3 / appear-01 :polarity -))
+                                    :ARG0-of (p2 / pursue-01
+                                          :ARG1 (p3 / provision
+                                                :location (p4 / paragraph
+                                                      :part-of (a4 / article
+                                                            :direction (p5 / precedding))
+                                                      :ord (o / ordinal-entity :value 1)))))))
+                  :time (e / elapse-01
+                        :ARG1 (p6 / period
+                              :ARG1-of (s2 / set-01
+                                    :ARG2 p4)))))
+      :op2 (d3 / deem-01
+            :ARG1 (d4 / die-01
+                  :ARG1 (p7 / person))))
+
+# ::id 32-2.1.1
+# ::snt In cases more than one person dies, if it is not clear whether one of the deceased survived the other(s), it is presumed that they all died at the same time. 
+# ::ltext In cases more than one person dies, if it is not clear whether one of the deceased survived the other(s), it is presumed that they all died at the same time. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(p / presume-01
+      :ARG1 (d / die-01
+            :ARG1 (p2 / person
+                  :quant (m / more-than :op1 1))
+            :time (s2 / same-01
+                  :ARG1 (t / time)))
+      :condition (a / and
+            :op1 (d2 / die-01
+                  :ARG1 p2)
+            :op2 (c / clear-06 :polarity -
+                  :ARG1 (s / survive-02
+                        :ARG0 (p3 / person)
+                        :ARG1 (p4 / person
+                              :mod (o / other))))))
+
+# ::id 33.1.1
+# ::snt No juridical person can be formed unless it is formed pursuant to the applicable provisions of this Code or other laws. 
+# ::ltext No juridical person can be formed unless it is formed pursuant to the applicable provisions of this Code or other laws. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Juridical person, and --> or
+(p / possible-01 :polarity -
+      :ARG1 (f / form-01
+            :ARG1 (p2 / person
+                  :mod (j / juridical)))
+      :condition (p3 / possible-01
+            :ARG1 (a / apply-02
+                  :ARG1 (p4 / provide-01
+                        :ARG1 (o2 / or
+                              :op1 (l / law :name "Code"
+                                    :domain (t / this))
+                              :op2 (l2 / law
+                                    :mod (o / other))))
+                  :ARG2 p2)))
+
+# ::id 34.1.1
+# ::snt Any association or foundation relating to any academic activities, art, charity, worship, religion, or other public interest which is not for profit may be established as a juridical person with the permission of the competent government agency.
+# ::ltext Any association or foundation relating to any academic activities, art, charity, worship, religion, or other public interest which is not for profit may be established as a juridical person with the permission of the competent government agency.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: academia or academic, thay :ARG3 bang :condition
+(p / possible-01
+      :ARG2 (e / establish-01
+            :ARG1 (o / or
+                  :op1 (a / associate-01)
+                  :op2 (f / found-01)
+                  :ARG1-of (r / relate-01
+                        :ARG2 (o2 / or
+                              :op1 (a2 / activity-06
+                                    :mod (a3 / academic))
+                              :op2 (a4 / art)
+                              :op3 (c / charity)
+                              :op4 (w / worship)
+                              :op5 (r2 / religion)
+                              :op6 (i2 / interest-01
+                                    :ARG1-of (p2 / public-02))
+                              :ARG0-of (p3 / profit-01 :polarity -))))
+            :ARG2 (p4 / person
+                  :mod (j / juridical))
+            :condition (p5 / permit-01
+                  :ARG0 (g / government-organization
+                        :mod (c2 / competent-01)))))
+
+# ::id 35.1.1
+# ::snt Any person who is neither an incorporated association nor an incorporated foundation shall not use in its name the words "incorporated association" or "incorporated foundation", or other words which is likely to be mistaken for those words.
+# ::ltext Any person who is neither an incorporated association nor an incorporated foundation shall not use in its name the words "incorporated association" or "incorporated foundation", or other words which is likely to be mistaken for those words.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: i4 vs i5?? word-01 hay word danh tu binh thuong, use :polarity -, ...
+(u / use-01 :polarity -
+      :ARG0 (p / person
+            :mod (o2 / or :polarity -
+                  :op1 (a / asscociation
+                        :mod (i4 / incoporated))
+                  :op2 (f / found-01
+                        :ARG1-of (i5 / incorporate-01))))
+      :ARG1 (o3 / or
+            :op1 (w / word
+                  :ARG1 (o / or :op1 "incorporated association" :op2 "incorporated foundation"))
+            :op2 (w2 / word
+                  :ARG1-of (m / mistake-01
+                        :ARG2 o)))
+      :location (n / name
+            :poss p))
+
+# ::id 38.1.1
+# ::snt The articles of incorporation may be changed only if the consent of three-quarters or more of all members is obtained; provided, however, that, this shall not apply to the cases where it is otherwise provided in the articles of incorporation. 
+# ::ltext (1) The articles of incorporation may be changed only if the consent of three-quarters or more of all members is obtained; provided, however, that, this shall not apply to the cases where it is otherwise provided in the articles of incorporation. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Quan hệ p2 với tổ chức là have-org-role-91, i2 la :topic cua a? otherwise la polarity -
+(c / contrast-01
+      :ARG1 (p / possible-01
+            :ARG1 (c2 / change-01
+                  :ARG1 (a / article
+                        :topic (i2 / incorporate-01)))
+            :condition (o / obtain-01
+                  :ARG1 (c3 / consent-01
+                        :ARG0 (p2 / person
+                              :ARG0-of (h / have-org-role-91
+                                    :ARG1 i2)
+                              :quant (m / more-than :op1 0.75)))))
+      :ARG2 (a2 / apply-02 :polarity -
+            :ARG1 p
+            :ARG2 (c4 / case-03
+                  :ARG1-of (p4 / provide-01 :polarity -
+                        :location a))))
+
+# ::id 38.2.1
+# ::snt No change of the articles of incorporation shall take effect unless and until it is approved by the competent government agency.
+# ::ltext (2) No change of the articles of incorporation shall take effect unless and until it is approved by the competent government agency.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Thiếu until
+(a / affect-01 :polarity -
+      :ARG0 (c / change-01
+            :ARG1 (a2 / article
+                  :mod (i2 / incorporate-02)))
+      :condition (a3 / approve-01
+            :ARG0 (g / government-organization
+                  :ARG1-of (c2 / competent-01))
+            :ARG1 c))
+
+# ::id 39.1.1
+# ::snt Any person who intends to form an incorporated foundation must provide for the matters set forth in items 1 to 5 inclusive of Article 37 in the act of endowment which is intended to form such foundation. 
+# ::ltext Any person who intends to form an incorporated foundation must provide for the matters set forth in items 1 to 5 inclusive of Article 37 in the act of endowment which is intended to form such foundation. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: found-01 hay foundation, provide for mang nghĩa chuẩn bị hơn là cung cấp, item -> matter, which is intended to form such foundation 
+(o / obligate-01
+      :ARG2 (p / provide-01
+            :ARG0 (p2 / person
+                  :ARG0-of (i2 / intend-01
+                        :ARG1 (f / form-01
+                              :ARG1 (f2 / found-01
+                                    :ARG1-of (i3 / incorporate-02)))))
+            :ARG1 (i4 / item
+                  :ord (o2 / ordinal-entity
+                        :value (v / value-interval :op1 1 :op2 5))
+                  :part-of (a / article
+                        :ord (o3 / ordinal-entity :value 37)
+                        :part-of (a2 / act
+                              :mod (e / endow-01))))))
+
+# ::id 40.1.1
+# ::snt When the person who intends to form an incorporated foundation dies without determining the name, location of the office, and the procedure of the appointment or dismissal of directors of such foundation, the court must, at the request of the interested person or a public prosecutor, determine such matters.
+# ::ltext When the person who intends to form an incorporated foundation dies without determining the name, location of the office, and the procedure of the appointment or dismissal of directors of such foundation, the court must, at the request of the interested person or a public prosecutor, determine such matters.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Determine such matters, found-01 hay foundation, have-org-role-91, public la :mod hay arg1-of, incorporate tuong tu
+(o / obligate-01
+      :ARG2 (d / determine-01
+            :ARG0 (c / court)
+            :ARG1 (a / and
+                  :op1 (n / name)
+                  :op2 (l / location
+                        :poss (o3 / office))
+                  :op3 (p6 / procedure
+                        :part-of (o4 / or
+                              :op1 (a2 / appoint-01
+                                    :ARG1 (p7 / person
+                                          :ARG0-of (h / have-org-role-91
+                                                :ARG1 f2
+                                                :ARG2 (d6 / director))))
+                              :op2 (d4 / dismiss-01
+                                    :ARG1 p7)))))
+      :condition (r / request-01
+            :ARG0 (o2 / or
+                  :op1 (p / person
+                        :ARG1-of (i2 / interest-01))
+                  :op2 (p2 / person
+                        :ARG0-of (h2 / have-org-role-91
+                              :ARG2 (p3 / prosecutor))
+                        :mod (p4 / public))))
+      :condition (d2 / determine-01 :polarity -
+            :ARG0 (p5 / person
+                  :ARG0-of (i3 / intend-01
+                        :ARG1 (f / form-01
+                              :ARG1 (f2 / found-01
+                                    :ARG1-of (i4 / incorporate-02))))
+                  :ARG0-of (d3 / die-01))
+            :ARG1 a))
+
+# ::id 41.1.1
+# ::snt The provisions relating to gifts shall apply mutatis mutandis to acts of endowment in the form of inter vivos dispositions to the extent this is not inconsistent with the nature thereof.
+# ::ltext (1) The provisions relating to gifts shall apply mutatis mutandis to acts of endowment in the form of inter vivos dispositions to the extent this is not inconsistent with the nature thereof.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(a / apply-02
+      :ARG1 (t / thing
+            :ARG1-of (r / relate-01
+                  :ARG2 (t2 / thing
+                        :ARG1-of (g / give-01)))
+            :mod (l / law))
+      :ARG2 (a2 / act-02
+            :part-of (e / endow-01)
+            :mod (d / dispose-02
+                  :mod (i2 / inter-vivos)))
+      :condition (c / consistent-01 :polarity -
+            :ARG1 a
+            :ARG2 (n / nature))
+	  :manner (m / mutatis-mutandis))
+
+# ::id 41.2.1
+# ::snt If an act of endowment is done by a will, the provisions relating to bequests shall apply mutatis mutandis to the extent it is not inconsistent with the nature thereof.
+# ::ltext (2) If an act of endowment is done by a will, the provisions relating to bequests shall apply mutatis mutandis to the extent it is not inconsistent with the nature thereof.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr:
+(a / apply-02
+      :ARG1 (t / thing
+            :ARG1-of (r / relate-01
+                  :ARG2 (t2 / thing
+                        :ARG1-of (g / give-01)))
+            :mod (l / law))
+      :ARG2 (a2 / act-02
+            :part-of (e / endow-01)
+            :mod (d / dispose-02
+                  :mod (i2 / inter)))
+      :condition (c / consistent-01 :polarity -
+            :ARG1 a
+            :ARG2 (t3 / thing
+                  :mod (n / nature))))
+
+# ::id 42.1.1
+# ::snt If an act of endowment was in the form of an inter vivos disposition, the endowed property shall vest in the juridical person at the time permission is given for the establishment of such juridical person.
+# ::ltext (1) If an act of endowment was in the form of an inter vivos disposition, the endowed property shall vest in the juridical person at the time permission is given for the establishment of such juridical person. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(g / grant-01
+      :ARG1 (p / property
+            :ARG1-of (e / endow-01))
+      :ARG2 (p2 / person
+            :mod (j / juridical))
+      :time (p3 / permit-01
+            :ARG1 (e2 / establish-01
+                  :ARG1 p2))
+      :condition (a / act
+            :mod e
+            :mod (d / dispose-02
+                  :mod (i2 / inter-vivos))))
+
+# ::id 42.2.1
+# ::snt If an act of endowment was done by a will, the endowed property shall vest in the applicable juridical person upon effectuation of such will.
+# ::ltext (2) If an act of endowment was done by a will, the endowed property shall vest in the applicable juridical person upon effectuation of such will. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(g / grant-01
+      :ARG1 (p / property
+            :ARG1-of (e / endow-01))
+      :ARG2 (p2 / person
+            :mod (j / juridical)
+            :ARG1-of (a2 / affect-01
+                  :ARG2 (w / will-02)))
+      :condition (b / be-done-08
+            :ARG0 w
+            :ARG1 (a / act-02
+                  :part-of e)))
+
+# ::id 43.1.1
+# ::snt A juridical person shall have rights and assume duties to the extent of the purpose provided in the applicable articles of incorporation or act of endowment subject to the applicable provisions of the laws and regulations.
+# ::ltext A juridical person shall have rights and assume duties to the extent of the purpose provided in the applicable articles of incorporation or act of endowment subject to the applicable provisions of the laws and regulations.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(a / and
+      :op1 (h / have-03
+            :ARG0 (p / person
+                  :mod (j / juridical))
+            :ARG1 (r / right-05))
+      :op2 (a2 / assume-01
+            :ARG0 p
+            :ARG1 (d / duty))
+      :extent (p2 / purpose-01
+            :part-of (o / or
+                  :op1 (a3 / article
+                        :mod (a4 / applicable)
+                        :poss (i2 / incorporate-02))
+                  :op2 (l / law
+                        :mod (e / endow-01)))
+            :ARG1-of (s / subject-01
+                  :ARG2 (p3 / provide-01
+                        :mod (a5 / applicable)
+                        :part-of (a6 / and
+                              :op1 (l2 / law)
+                              :op2 (r2 / regulate-01))))))
+
+# ::id 44.1.1
+# ::snt A juridical person shall be liable for damage caused to others by its directors or other agents during the course of the performance of their duties.
+# ::ltext (1) A juridical person shall be liable for damage caused to others by its directors or other agents during the course of the performance of their duties.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(l / liable-01
+      :ARG1 (p / person
+            :mod (j / juridical))
+      :ARG2 (d / damage-01
+            :ARG0 (o2 / or
+                  :op1 (d2 / director)
+                  :op2 (a / agent))
+            :ARG1 (o / other)
+            :duration (p2 / perform-01
+                  :part-of (d3 / duty
+                        :poss o2))))
+
+# ::id 45.1.1
+# ::snt A juridical person must complete its registration within two weeks from the day of its establishment at the location of its principal office, and within three weeks at any location of its other office.
+# ::ltext (1) A juridical person must complete its registration within two weeks from the day of its establishment at the location of its principal office, and within three weeks at any location of its other office.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Location of office??
+(o / obligate-01
+      :ARG2 (c / complete-01
+            :ARG0 (p / person
+                  :mod (j / juridical))
+            :ARG1 (r / register-02
+                  :ARG0 p
+                  :ARG1 (e / establish-01
+                        :ARG1 p))
+            :time (a / and
+                  :op1 (a2 / after
+                        :op1 e
+                        :quant (u / up-to
+                              :op1 (t / temporal-quantity :quant 2
+                                    :unit (w / week)))
+                        :location (o2 / office
+                              :poss p
+                              :mod (p2 / principal)))
+                  :op2 (a3 / after
+                        :op1 e
+                        :quant (u2 / up-to
+                              :op1 (t2 / temporal-quantity :quant 3
+                                    :unit w))
+                        :location (o3 / office
+                              :mod (o4 / other))))))
+
+# ::id 45.2.1
+# ::snt The establishment of a juridical person may not be asserted against a third party unless it is registered at the location of its principal office.
+# ::ltext (2) The establishment of a juridical person may not be asserted against a third party unless it is registered at the location of its principal office.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Location of office??
+(p / possible-01
+      :ARG1 (a / assert-03
+            :ARG1 (o / oppose-01
+                  :ARG0 (e / establish-01
+                        :ARG1 (p3 / person
+                              :mod (j / juridical)))
+                  :ARG1 (p2 / person)))
+      :condition (r / register-02
+            :ARG1 p3
+            :location (o2 / office
+                  :poss p3
+                  :mod (p4 / principal))))
+	  
+
+# ::id 45.3.1
+# ::snt If, after the establishment of a juridical person, any new office is established, the registration at the location of such office must be filed within 3 weeks.
+# ::ltext (3) If, after the establishment of a juridical person, any new office is established, the registration at the location of such office must be filed within 3 weeks.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Location of office??
+(o / obligate-01
+      :ARG2 (f / file-01
+            :ARG1 (r / register-02
+                  :ARG1 (p / person
+                        :mod (j / juridical))
+                  :location (l / location
+                        :part-of (o2 / office
+                              :ARG1-of (n / new-01))))
+            :time (w / within
+                  :op1 (e / establish-01
+                        :ARG1 o2
+                        :time (a / after
+                              :op1 (e2 / establish-01
+                                    :ARG1 p)))
+                  :quant (t / temporal-quantity :quant 3
+                        :unit (w2 / week)))
+            :condition e))
+
+# ::id 46.3.2
+# ::snt The provision of the second sentence of the precedding paragraph shall apply mutatis mutandis to such case.
+# ::ltext The provision of the second sentence of the precedding paragraph shall apply mutatis mutandis to such case.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(a / apply-02
+      :ARG1 (p / provision-02
+            :ARG0 (s / sentence-01
+                  :ord (o / ordinal-entity :value 2)
+                  :poss (p2 / paragraph
+                        :direction (p3 / preceding))))
+      :ARG2 (c / case-04)
+      :manner (m / mutatis-mutandis))
+
+# ::id 47.1.1
+# ::snt The period for the registration of any matter to be registered pursuant to the provision of paragraph 1 of Article 45 and the precedding Article which requires the permission of the government agency shall be calculated commencing from the day of the arrival of such permit. 
+# ::ltext The period for the registration of any matter to be registered pursuant to the provision of paragraph 1 of Article 45 and the precedding Article which requires the permission of the government agency shall be calculated commencing from the day of the arrival of such permit. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr: Can xem lai
+(t3 / time-01
+      :ARG1 (r / register-02
+            :ARG1 (t2 / thing
+                  :ARG0-of (p / pursue-01
+                        :ARG1 (a / and
+                              :op1 (p2 / provision
+                                    :part-of (p3 / paragraph
+                                          :ord (o / ordinal-entity :value 1)
+                                          :part-of (a2 / article
+                                                :ord (o2 / ordinal-entity :value 45))))
+                              :op2 (a3 / article
+                                    :direction (p4 / precedding))
+                              :ARG1-of (r2 / require-01
+                                    :ARG1 (p5 / permit-01
+                                          :ARG0 (g / government-organization)))))))
+      :ARG2 (d / date-interval
+            :op1 (a4 / arrive-01
+                  :ARG1 p5)))
+
+# ::id 48.3.1
+# ::snt In cases any office is relocated to any location within the jurisdictional district of the same Registry, it shall be sufficient to register the fact of such relocation. 
+# ::ltext (3) In cases any office is relocated to any location within the jurisdictional district of the same Registry, it shall be sufficient to register the fact of such relocation. 
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(s / suffice-01
+      :ARG1 (r / register-02
+            :ARG1 (r2 / relocate-01
+                  :ARG1 (o / office)
+                  :ARG2 (l / location
+                        :location (d / district
+                              :mod (j / jurisdictional)
+                              :poss (r3 / registry)))
+                  :ARG3 (l2 / location
+                        :location (d2 / district
+                              :mod j
+                              :poss r3))))
+      :condition r2)
+
+# ::id 49.2.1
+# ::snt When a foreign juridical person has established an office in Japan for the first time, a third party may deny the establishment of such juridical person until the registration has been completed at the location of such office.
+# ::ltext (2) When a foreign juridical person has established an office in Japan for the first time, a third party may deny the establishment of such juridical person until the registration has been completed at the location of such office.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(p / possible-01
+      :ARG1 (d / deny-01
+            :ARG0 (p2 / party-01
+                  :ord (o / ordinal-entity :value 3))
+            :ARG1 (e / establish-01
+                  :ARG1 (p3 / person
+                        :mod (j / juridical)
+                        :mod (f / foreign)))
+            :duration (u / until
+                  :op1 (c / complete-01
+                        :ARG1 (r / register-02)
+                        :location (o2 / office))))
+      :time (e2 / establish-01 :frequency 1
+            :ARG0 p3
+            :ARG1 o2
+            :location (c2 / country :name (n / name :op1 "Japan"))))
+
+# ::id 50.1.1
+# ::snt The domicile of a juridical person shall be at the location of its principal office.
+# ::ltext The domicile of a juridical person shall be at the location of its principal office.
+# Annotator-1: VietLD 
+# Annotator-2: SinhVTr
+(d / domicile
+      :poss (p / person
+            :mod (j / juridical))
+      :location (o / office
+            :mod (p2 / principle)
+            :poss p))
+
+# ::id 51.1.1
+# ::snt A juridical person must prepare its inventory of property at the time of its establishment, and at any time between January and March of each year, and must keep it at its principal office at all times; provided, however, that, in cases a juridical person establishes any specific fiscal year, it must prepare the inventory of property at the time of its establishment and at the end of its respective fiscal year.
+(c / contrast-01
+      :ARG1 (a3 / and
+            :op1 (o / obligate-01
+                  :ARG0 (p / person
+                        :mod (j / juridical))
+                  :ARG2 (p2 / prepare-01
+                        :ARG0 p
+                        :ARG1 (i2 / inventory
+                              :poss p
+                              :consist-of (p3 / property)))
+                  :time (a / and
+                        :op1 (e / establish-01
+                              :ARG1 p)
+                        :op2 (b / between
+                              :op1 (d / date-entity :month 1
+                                    :year (a2 / any))
+                              :op2 (d2 / date-entity :month 3
+                                    :year a2))))
+            :op2 (o2 / obligate-01
+                  :ARG0 p
+                  :ARG1 (k / keep-01
+                        :ARG0 p
+                        :ARG1 i2
+                        :location (o3 / office
+                              :mod (p4 / principal)
+                              :poss p))))
+      :ARG2 (o4 / obligate-01
+            :ARG0 p
+            :ARG2 (p5 / prepare-01
+                  :ARG0 p
+                  :ARG1 i2)
+            :time (a4 / and
+                  :op1 (e2 / establish-01
+                        :ARG1 p)
+                  :op2 (e3 / end-01
+                        :ARG1 (y / year
+                              :mod (f / fiscal)
+                              :mod (r / respective))))
+            :condition (e4 / establish-01
+                  :ARG0 p
+                  :time (y2 / year
+                        :mod (f2 / fiscal)
+                        :mod (a5 / any)))))
+						
+# ::id 51.2.1
+# ::snt An incorporated association must keep its directory of members and make necessary changes whenever there is any change in the members.
+(o / obligate-01
+      :ARG0 (a / associate-01
+            :mod (i2 / incorporated))
+      :ARG1 (a2 / and
+            :op1 (k / keep-01
+                  :ARG0 a
+                  :ARG1 (d / directory
+                        :consist-of (m / member)))
+            :op2 (m2 / make-01
+                  :ARG0 a
+                  :ARG1 (c / change-01
+                        :mod (n / necessary))
+                  :time (c2 / change-01
+                        :ARG1 m))))
+
+# ::id 52.1.1
+# ::snt A juridical person must have one or more director(s).
+(o / obligate-01
+      :ARG0 (p / person
+            :mod (j / juridical))
+      :ARG1 (h / have-03
+            :ARG0 p
+            :ARG1 (d / director
+                  :quant (o2 / or
+                        :op1 (t / temporal-quantity :quant 1)
+                        :op2 (m / more-than
+                              :op1 (t2 / temporal-quantity :quant 1))))))
+
+# ::id 52.2.1
+# ::snt In cases there is more than one director, unless otherwise provided in the articles of incorporation or act of endowment, the business of the juridical person shall be determined by the majority of all directors.
+(d / determine-01
+      :ARG0 (d2 / director
+            :mod (m / majority)
+            :ARG1-of (i2 / include-91
+                  :ARG2 (d3 / director
+                        :mod (a / all))))
+      :ARG1 (b / business
+            :poss (p / person
+                  :mod (j / juridical)))
+      :condition (d4 / director
+            :quant (m2 / more-than :op1 1))
+      :condition (p2 / provision-02 :polarity -
+            :location (o / or
+                  :op1 (a2 / article
+                        :mod (i3 / incorporation))
+                  :op2 (a3 / act
+                        :mod (e / endowment)))))
+
+# ::id 53.1.1
+# ::snt No limitation on a director's authority may be asserted against a third party without knowledge.
+(a / assert-03
+      :ARG1 (l / limit-01 :polarity -
+            :ARG1 (a2 / authority
+                  :poss (d / director)))
+      :ARG2 (p / party
+            :mod (t / third)
+            :ARG0-of (k / know-03 :polarity -)))
+
+# ::id 55.1.1
+# ::snt A director may delegate his/her authority on a specific act to other person(s) only in cases such delegation is not prohibited by the applicable articles of incorporation, act of endowment, or resolution of the general meeting of the members.
+(d / delegate-01
+      :ARG0 (d2 / director)
+      :ARG1 (a / authority
+            :poss d2
+            :mod (a2 / act
+                  :mod (s / specific)))
+      :ARG2 (p / person
+            :mod (o / other))
+      :condition (p2 / prohibit-01 :polarity -
+            :ARG0 (o2 / or
+                  :op1 (a3 / article
+                        :topic (i2 / incorporation))
+                  :op2 (a5 / act
+                        :topic (e / endowment))
+                  :op3 (r / resolution
+                        :topic (m / meet-03
+                              :ARG0 (m2 / member)
+                              :mod (g / general)))
+                  :mod (a4 / applicable))
+            :ARG1 d))
+
+# ::id 56.1.1
+# ::snt In cases there is any vacancy in the office of directors, if any damage is likely to occur due to the delay in the business, the court must, at the request of any interested person or a public prosecutor, appoint a provisional director.
+(a / appoint-01
+      :ARG0 (c / court)
+      :ARG1 (d / director
+            :mod (p / provisional))
+      :condition (v / vacancy
+            :location (o / office
+                  :poss (d2 / director))
+            :condition (o2 / occur-01
+                  :ARG1 (d3 / damage)
+                  :ARG1-of (l / likely-01)
+                  :ARG1-of (c2 / cause-01
+                        :ARG0 (d4 / delay-01
+                              :ARG1 (b / business)))))
+      :time (r / request-01
+            :ARG0 (o3 / or
+                  :op1 (p2 / person
+                        :ARG1-of (i2 / interest-01))
+                  :op2 (p3 / prosecutor
+                        :mod (p4 / public)))))
+						
+# ::id 57.1.1
+# ::snt A director shall have no authority of representation as to any matter involving a conflict of interest between the juridical person and such director. In such case, the court must, at the request of any interested person or a public prosecutor, appoint a special agent.
+(m / multi-sentence
+      :snt1 (h / have-03 :polarity -
+            :ARG0 (d / director)
+            :ARG1 (a / authority
+                  :ARG0-of (r / represent-01
+                        :ARG2 (m2 / matter
+                              :ARG0-of (i2 / involve-01
+                                    :ARG1 (c / conflict-01
+                                          :ARG0 (p / person
+                                                :mod (j / juridical))
+                                          :ARG1 d
+                                          :ARG2 (i3 / interest)))))))
+      :snt2 (o / obligate-01
+            :ARG0 (c2 / court)
+            :ARG1 (a2 / appoint-01
+                  :ARG0 c2
+                  :ARG2 (a3 / agent
+                        :mod (s / special)))
+            :condition (c3 / case
+                  :mod (s2 / such))
+            :time (r2 / request-01
+                  :ARG0 (o2 / or
+                        :op1 (p2 / person
+                              :mod (i4 / interested))
+                        :op2 (p3 / prosecutor
+                              :mod (p4 / public))))))
+
+# ::id 58.1.1
+# ::snt  A juridical person may appoint one or more auditor-secretary(ies) under the authority of the articles of incorporation, act of endowment or the resolution of the general meeting of the members.
+(a / appoint-01
+      :ARG0 (p / person
+            :mod (j / juridical))
+      :ARG2 (a2 / auditor-secretary
+            :quant (o / or :op1 1
+                  :op2 (m / more-than :op1 1)))
+      :ARG1-of (s / say-01
+            :ARG0 (a3 / authority
+                  :poss (o2 / or
+                        :op1 (a4 / article
+                              :topic (i2 / incorporation))
+                        :op2 (a5 / act
+                              :topic (e / endowment))
+                        :op3 (r / resolution
+                              :topic (m2 / meet-03
+                                    :ARG0 (m3 / member)
+                                    :mod (g / general)))))))
+
+
+# ::id 60.1.1
+# ::snt  The director(s) of an incorporated association must convoke an ordinary general meeting of the members at least once a year.
+(o / obligate-01
+      :ARG0 (d / director
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (a / association
+                        :ARG1-of (i2 / incorporate-02))))
+      :ARG1 (c / convoke-01
+            :ARG0 d
+            :ARG1 (m / meet-03
+                  :ARG0 (m2 / member)
+                  :ARG1-of (g / general-02
+                        :mod (o2 / ordinary)))
+            :frequency (a2 / at-least
+                  :op1 (t / temporal-quantity :quant 1
+                        :unit (y / year)))))
+
+# ::id 61.1.1
+# ::snt The director(s) of an incorporated association may convoke an extraordinary general meeting of the members whenever directors find it necessary.						
+(c / convoke-01
+      :ARG0 (d / director
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (a / association
+                        :ARG1-of (i2 / incorporate-02))))
+      :ARG1 (m / meet-03
+            :ARG0 (m2 / member)
+            :ARG1-of (g / general-02
+                  :mod (e / extraordinary)))
+      :condition (f / find-01
+            :ARG0 d
+            :ARG1 m
+            :ARG2 (n / necessary)))
+# ::id 61.2.1
+# ::snt The director(s) must convoke an extraordinary general meeting if one-fifth or more of all members so request by specifying the matter(s) which is/are the purpose(s) of the meeting; provided, however, that a ratio other than one-fifth may be stipulated by the articles of incorporation.
+(c2 / contrast-01
+      :ARG1 (o / obligate-01
+            :ARG0 (d / director)
+            :ARG1 (c / convoke-01
+                  :ARG0 d
+                  :ARG1 (m / meet-03
+                        :ARG1-of (g / general-02
+                              :mod (e / extraordinary))))
+            :condition (r / request-01
+                  :ARG0 (m2 / member
+                        :quant (a / at-least :op1 "1/5"))
+                  :manner (s / specify-01
+                        :ARG0 m2
+                        :ARG1 (m3 / matter-01
+                              :ARG0 (p / purpose
+                                    :poss m)))))
+      :ARG2 (s2 / stipulate-01
+            :ARG0 (a2 / article
+                  :topic (i2 / incorporation))
+            :ARG1 (r2 / ratio :quant "1/5"
+                  :mod (o2 / other))))
+				  
+# ::id 62.1.1
+# ::snt The notice of the convocation of the general meeting must be given at least five days prior to the scheduled day of the meeting in the manner provided in the articles of incorporation by specifying the matter(s) which is/are the purpose(s) of the meeting.
+(g / give-01
+      :ARG1 (n / notice-01
+            :ARG1 (c / convoke-01
+                  :ARG1 (m / meet-03
+                        :ARG1-of (g2 / general-02))))
+      :time (b / before
+            :op1 (d / day
+                  :ARG1-of (s / schedule-01)
+                  :time-of m)
+            :duration (a / at-least
+                  :op1 (t / temporal-quantity :quant 5
+                        :unit (d2 / day))))
+      :ARG1-of (s2 / say-01
+            :ARG0 (a2 / article
+                  :topic (i2 / incorporation)))
+      :manner (s3 / specify-01
+            :ARG1 (m2 / matter
+                  :purpose-of m)))
+				  
+# ::id 63.1.1
+# ::snt The business of the incorporated association shall be carried out pursuant to the applicable resolution of the general meeting, except those delegated to the director(s) or other officer(s) by the articles of incorporation.
+(c / carry-out-03
+      :ARG1 (b / business
+            :poss (a / association
+                  :ARG1-of (i2 / incorporate-02)))
+      :ARG1-of (p / pursue-01
+            :ARG0 (r / resolution
+                  :poss (m / meet-03
+                        :ARG1-of (g / general-02))
+                  :mod (a2 / applicable)))
+      :ARG0-of (e / except-01
+            :ARG2 (d / delegate-01
+                  :ARG1 (t / those)
+                  :ARG2 (o / or
+                        :op1 (d2 / director)
+                        :op2 (o2 / officer
+                              :mod (o3 / other)))
+                  :ARG1-of (s / say-01
+                        :ARG0 (a3 / article
+                              :topic (i3 / incorporation))))))
+							  
+# ::id 64.1.1
+# ::snt The general meeting may adopt a resolution only with respect to any matter which is notified in advance pursuant to the provision of Article 62; provided, however, that, this shall not apply where the articles of incorporation provide otherwise.
+(c / contrast-01
+      :ARG1 (a / adopt-01
+            :ARG0 (m / meet-03
+                  :ARG1-of (g / general-02))
+            :ARG1 (r / resolution)
+            :ARG1-of (p / possible-01)
+            :manner (r2 / respect-01
+                  :ARG1 (m2 / matter
+                        :mod (a2 / any)
+                        :ARG1-of (n / notify-01)
+                        :ARG0-of (p2 / pursue-01
+                              :ARG1 (p3 / provision
+                                    :poss (a3 / article
+                                          :ord (o / ordinal-entity :value 62)))))))
+      :ARG2 (a4 / apply-02 :polarity -
+            :ARG1 a
+            :condition (p4 / provide-01 :polarity -
+                  :ARG0 (a5 / article
+                        :topic (i2 / incorporation)))))
+
+# ::id 65.1.1
+# ::snt The vote of each member shall be of equal value.
+(v / vote
+      :poss (m / member
+            :mod (e / each))
+      :ARG1-of (h / have-quant-91
+            :ARG3 (e2 / equal)))
+
+# ::id 65.2.1
+# ::snt A member who is not present in the general meeting may vote in writing or by proxy.
+(v / vote-01
+      :ARG0 (m / member
+            :ARG0-of (p / present-102 :polarity -
+                  :location (m2 / meeting
+                        :ARG1-of (g / general-02))))
+      :manner (o / or
+            :op1 (w / write-01)
+            :op2 (p2 / proxy)))
+
+# ::id 65.3.1
+# ::snt The provisions of the preceding two paragraphs shall not apply if the articles of incorporation provide otherwise.
+(a / apply-02 :polarity -
+      :ARG0 (p / provision
+            :poss (p2 / paragraph
+                  :direction (p3 / preceding :quant 2)))
+      :condition (p4 / provision-02
+            :ARG0 (a2 / article
+                  :topic (i2 / incorporation))
+            :ARG1 (h / have-polarity-91
+                  :ARG1 a
+                  :ARG2 -)))
+
+# ::id 66.1.1
+# ::snt In cases any resolution is to be made with respect to the relationship between the incorporated association and any particular member, such member shall have no vote.
+(h / have-03
+      :ARG0 (m / member
+            :mod (p / particular)
+            :mod (a3 / any))
+      :ARG1 (v / vote :polarity -)
+      :condition (m2 / make-01
+            :ARG1 (r / resolution
+                  :mod (a / any))
+            :manner (r2 / respect-01
+                  :ARG1 (r3 / relation-03
+                        :ARG0 (a2 / association
+                              :mod (i2 / incorporated))
+                        :ARG2 m))))
+
+# ::id 67.1.1
+# ::snt The business of a juridical person shall be subject to the supervision by the competent government agency.
+(s / subject-01
+      :ARG0 (s2 / supervise-01
+            :ARG0 (a / agency
+                  :mod (g / goverment-organization
+                        :ARG0-of (g2 / govern-01))
+                  :mod (c / competent)))
+      :ARG1 (b / business
+            :poss (p / person
+                  :mod (j / juridical))))
+
+# ::id 67.2.1
+# ::snt The competent government agency may issue to the juridical person any order which shall be necessary for the purpose its supervision.
+(i2 / issue-01
+      :ARG0 (a / agency
+            :mod (g / government-organization
+                  :ARG0-of (g2 / govern-01))
+            :mod (c / competent))
+      :ARG1 (o / order-01
+            :mod (a2 / any)
+            :ARG1-of (n / need-01
+                  :purpose (s / supervise-01
+                        :poss a)))
+      :ARG2 (p / person
+            :mod (j / juridical)))
+
+# ::id 67.3.1
+# ::snt The competent government agency may, by exercising its authority, inspect the status of the business and property of a juridical person at any time.
+(p / possible-01
+      :ARG1 (i2 / inspect-01
+            :ARG0 (a / a
+                  :mod (g / government-organization
+                        :ARG0-of (g2 / govern-01))
+                  :mod (c / competent))
+            :ARG1 (s / status
+                  :topic (a2 / and
+                        :op1 (b / business)
+                        :op2 (p2 / property)
+                        :poss (p3 / person
+                              :mod (j / juridical))))
+            :time (a3 / any)))
+
+# ::id 69.1
+# ::snt An incorporated association may not adopt a resolution for dissolution without the affirmative votes of three-fourths or more of all the members; provided, however, that, this shall not apply to the cases where it is provided otherwise in the articles of incorporation.
+(c / contrast-01
+      :ARG1 (a / adopt-01 :polarity -
+            :ARG0 (a2 / association
+                  :mod (i2 / incorporated))
+            :ARG1 (r / resolve-01
+                  :ARG1 (d / dissolve-01))
+            :ARG1-of (p / possible-01)
+            :ARG0-of (h / have-03 :polarity -
+                  :ARG1 (v / vote-01
+                        :ARG0 (p2 / person
+                              :ARG0-of (h2 / have-org-role-91
+                                    :ARG2 (m / member))
+                              :quant (a4 / at-least :op1 "3/4")
+                              :mod (a5 / all))
+                        :mod (a3 / affirmative))))
+      :ARG2 (a6 / apply-02
+            :ARG0 a
+            :ARG1 (c2 / case-04
+                  :ARG1 (p3 / provide-01 :polarity -
+                        :location (a7 / article
+                              :topic (i3 / incorporation))))))
+
+# ::id 70.1.1
+# ::snt In cases a juridical person is unable to pay its debts in full out of its property, the court shall, at the filing of any director or any obligee or by exercising its authority, provide the ruling to commence bankruptcy procedures.
+(p / provide-01
+      :ARG0 (c / court)
+      :ARG1 (r / rule-01
+            :purpose (c2 / commence-01
+                  :ARG1 (p2 / procedure
+                        :topic (b / bankrupt-01))))
+      :time (c3 / case-04
+            :ARG1 (p3 / pay-01
+                  :ARG0 (p4 / person
+                        :mod (j / juridical))
+                  :ARG1 (d / debt
+                        :poss p4)
+                  :ARG1-of (p5 / possible-01 :polarity -)
+                  :manner (f / full
+                        :poss (p6 / property
+                              :poss p4))))
+      :manner (o / or
+            :op1 (f2 / file-01
+                  :ARG0 (o2 / or
+                        :op1 (d2 / director
+                              :mod (a / any))
+                        :op2 (o3 / obligee
+                              :mod (a2 / any))))
+            :op2 (e / exercise-01
+                  :ARG1 (a3 / authority
+                        :poss c))))
+
+# ::id 70.2.1
+# ::snt In the case prescribed in the preceding paragraph, the director(s) must immediately file a petition for the commencement of bankruptcy procedure.
+(o / obligate-01
+      :ARG0 (d / director)
+      :ARG1 (f / file-01
+            :ARG0 d
+            :ARG1 (p / petition-01))
+      :manner (i2 / immediately)
+      :purpose (c / commence-01
+            :ARG1 (p2 / procedure
+                  :topic (b / bankrupt-01)))
+      :time (c2 / case-04
+            :ARG1-of (p3 / prescribe-01)
+            :location (p4 / paragraph
+                  :direction (p5 / precedding))))
+
+# ::id 72.1.1
+# ::snt The assets of a dissolved juridical person shall vest in the person who is designated in the articles of incorporation or act of endowment.
+(v / vest-01
+      :ARG0 (a / asset
+            :poss (p / person
+                  :mod (j / juridical)
+                  :ARG1-of (d / dissolve-01)))
+      :ARG1 (p2 / person
+            :ARG1-of (d2 / designate-01)
+            :location (o / or
+                  :op1 (a2 / article
+                        :topic (i2 / incorporation))
+                  :op2 (a3 / act
+                        :mod (e / endow-01)))))
+
+# ::id 72.3.1
+# ::snt Any asset which cannot be disposed of pursuant to the provisions of the preceding two paragraphs shall vest in the national treasury.
+(v / vest-01
+      :ARG0 (a / asset
+            :ARG1-of (d / dispose-01
+                  :ARG1-of (p / possible-01 :polarity -)
+                  :ARG0-of (p2 / pursue-01
+                        :ARG1 (p3 / provision
+                              :location (p4 / paragraph :quant 2
+                                    :direction (p5 / precedding))))))
+      :ARG1 (t / treasury
+            :mod (n / national)))
+
+# ::id 73.1
+# ::snt A dissolved juridical person is deemed to still continue to exist to the extent of the purpose of the liquidation until the conclusion of such liquidation.
+(d / deem-01
+      :ARG0 (p / person
+            :mod (j / juridical)
+            :ARG1-of (d2 / dissolve-01))
+      :ARG1 (c / continue-01
+            :ARG0 p
+            :ARG1 (e / exist-01
+                  :purpose (l / liquidate-01)
+                  :time (b / before
+                        :op1 (c2 / conclude-01
+                              :ARG0 l)))
+            :manner (s / still)))
+
+# ::id 74.1
+# ::snt Except in cases of dissolution by the operation of the ruling to commence bankruptcy procedures, when a juridical person is dissolved, its director(s) shall become the liquidator(s); provided, however, that, this shall not apply to the cases where an applicable provision of any articles of incorporation or act of endowment otherwise provides, or any person other than the director(s) has been appointed as the liquidator(s) in the general meeting.
+(c / contrast-01
+      :ARG1 (b / become-01
+            :ARG1 (d / director
+                  :poss p2)
+            :ARG2 (p / person
+                  :ARG0-of (l / liquidate-01))
+            :time (d2 / dissolve-01
+                  :ARG1 (p2 / person
+                        :mod (j / juridical)))
+            :condition (c2 / case-04 :polarity -
+                  :ARG1 (d3 / dissolve-01
+                        :ARG2 (o / operate-01
+                              :poss (r / rule-01
+                                    :ARG1 (c3 / commence-01
+                                          :ARG1 (p3 / procedure
+                                                :topic (b2 / bankrupt-01))))))))
+      :ARG2 (a / apply-02
+            :ARG1 b
+            :ARG2 (c4 / case-04
+                  :ARG1 (o2 / or
+                        :op1 (p4 / provide-01
+                              :ARG0 (p5 / provision
+                                    :mod (a2 / applicable)
+                                    :poss (o3 / or
+                                          :op1 (a3 / article
+                                                :topic (i2 / incorporated))
+                                          :op2 (a4 / act
+                                                :ARG1-of (e / endow-01)))))
+                        :op2 (a5 / appoint-01
+                              :ARG1 (p6 / person
+                                    :mod (a6 / any)
+                                    :ARG0-of (h / have-org-role-91 :polarity -
+                                          :ARG2 (d4 / director)))
+                              :ARG2 (l2 / liquidator
+                                    :location (m / meet-03
+                                          :ARG1-of (g / general-02))))))))
+
+# ::id 75.1
+# ::snt If no liquidator is identified pursuant to the provisions of the preceding Article, or if any damage is likely to occur due to the vacancy in the office of a liquidator, the court may appoint a liquidator at the request of any interested person or a public prosecutor, or by exercising its authority.
+(a / appoint-01
+      :ARG0 (c / court)
+      :ARG2 (l / liquidator)
+      :manner (o / or
+            :op1 (r / request-01
+                  :ARG0 (o2 / or
+                        :op1 (p / person
+                              :ARG1-of (i2 / interest-01))
+                        :op2 (p2 / prosecutor
+                              :ARG1-of (p3 / public-02))))
+            :op2 (e / exercise-01
+                  :ARG1 (a2 / authority
+                        :poss c)))
+      :condition (o3 / or
+            :op1 (i3 / identify-01
+                  :ARG1 (l2 / liquidator :polarity -)
+                  :ARG0-of (p4 / pursue-01
+                        :ARG1 (p5 / provision
+                              :poss (a3 / article
+                                    :direction (p6 / precedding)))))
+            :op2 (o4 / occur-01
+                  :ARG1 (d / damage-01
+                        :mod (a4 / any))
+                  :manner (l3 / likely)
+                  :ARG1-of (c2 / cause-01
+                        :ARG2 (v / vacancy
+                              :location (o5 / office
+                                    :poss (l4 / liquidator)))))))
+
+# ::id 76.1
+# ::snt If there is any important reason for doing so, the court may dismiss a liquidator at the request of any interested person or a public prosecutor, or by exercising its authority.
+(p / possible-01
+      :ARG1 (d / dismiss-01
+            :ARG0 (c / court)
+            :ARG1 (l / liquidator)
+            :manner (o / or
+                  :op1 (r / request-01
+                        :ARG0 (o2 / or
+                              :op1 (p2 / person
+                                    :ARG1-of (i2 / interest-01))
+                              :op2 (p3 / prosecutor
+                                    :ARG1-of (p4 / public-02))))
+                  :op2 (e / exercise-01
+                        :ARG1 (a / authority
+                              :poss c))))
+      :condition (r2 / reason
+            :ARG1-of (i3 / important-01)
+            :purpose (d2 / do-02
+                  :ARG1 d)))
+
+# ::id 77.1
+# ::snt Within two months from the day when he/she takes office, the liquidator(s) must require the relevant obligees, by releasing a public notice on at least three occasions, to file their claims within a stated period, in which case such notice period may not be less than two months.
+(o / obligate-01
+      :ARG0 (l / liquidator)
+      :ARG1 (r / require-01
+            :ARG0 l
+            :ARG1 (f / file-01
+                  :ARG0 o2
+                  :ARG1 (c / claim-01
+                        :poss o2))
+            :ARG2 (o2 / obligee
+                  :ARG1-of (r2 / relevant-01))
+            :time (p / possible-01
+                  :ARG1 (a / after
+                        :quant (u / up-to
+                              :op1 (t / temporal-quantity :quant 2
+                                    :unit (m / month))))))
+      :time (a2 / after
+            :op1 (t2 / take-01
+                  :ARG0 l
+                  :ARG1 (o3 / office))
+            :quant u))
+
+# ::id 78.1
+# ::snt The public notice set forth in the preceding paragraph must note that any claim of an obligee shall be excluded from the liquidation procedure unless he/she submits his/her claim within the stated period; provided, however, that that the liquidator may not exclude any known obligee.
+(c / contrast-01
+      :ARG1 (o / obligate-01
+            :ARG0 (n / notice-01
+                  :ARG1-of (p / public-02)
+                  :ARG1-of (s / set-02
+                        :location (p2 / paragraph
+                              :direction (p3 / precedding))))
+            :ARG1 (n2 / note-02
+                  :ARG0 n
+                  :ARG1 (e / exclude-01
+                        :ARG1 (c2 / claim-01
+                              :poss (o2 / obligee))
+                        :ARG2 (p4 / procedure
+                              :topic (l / liquidate-01))))
+            :condition (s2 / submit-01 :polarity -
+                  :ARG0 o2
+                  :ARG1 c2
+                  :time (a / after
+                        :quant (u / up-to
+                              :op1 (p5 / period
+                                    :ARG1-of (s3 / state-01))))))
+      :ARG2 (p6 / possible-01 :polarity -
+            :ARG1 (e2 / exclude-01
+                  :ARG0 (l2 / liquidator)
+                  :ARG1 (o3 / obligee
+                        :ARG1-of (k / know-01)
+                        :mod (a2 / any)))))
+
+# ::id 78.1
+# ::snt The liquidator must require the filing of the claim to each of the known obligees.
+(o / obligate-01
+      :ARG0 (p / person
+            :ARG0-of (l / liquidate-01))
+      :ARG1 (r / require-01
+            :ARG0 p
+            :ARG1 (f / file-01
+                  :ARG2 (o2 / obligee
+                        :mod (e / each)
+                        :ARG1-of (k / know-01))
+                  :poss (c / claim-01))))
+
+# ::id 79.1
+# ::snt The public notice pursuant to the provision of paragraph (1) above shall be given by publishing it in the Official Gazette.
+(g / give-01
+      :ARG1 (n / notice
+            :ARG1-of (p / public-02)
+            :ARG0-of (p2 / pursue-01
+                  :ARG1 (p3 / provision
+                        :poss (p4 / paragraph :name (n2 / name :op1 "1")
+                              :direction (a / above)))))
+      :manner (p5 / publish-01
+            :ARG0 n
+            :ARG1 (t / thing :name (n3 / name :op1 "Official" :op2 "Gazette"))))
+
+# ::id 80.1
+# ::snt Any obligee who submits its claim after the lapse of the period set forth in paragraph (1) of the preceding Article shall be entitled to make its claim only to the assets which, after all debts of the juridical person have been fully paid, is not yet delivered to the person with vested rights.
+(e / entitle-01
+      :ARG1 (o / obligee
+            :mod (a / any)
+            :ARG0-of (s / submit-01
+                  :ARG1 (c / claim-01
+                        :poss o)
+                  :time (a2 / after
+                        :op1 (l / lapse-01
+                              :ARG1 (p / period
+                                    :ARG1-of (s2 / set-02
+                                          :location (p2 / paragraph :name (n / name :op1 "1")
+                                                :poss (a3 / article
+                                                      :direction (p3 / precedding)))))))))
+      :purpose (m / make-01
+            :ARG1 c
+            :ARG3 (a4 / asset
+                  :ARG1-of (d / deliver-01 :polarity -
+                        :ARG2 (p4 / person
+                              :ARG1-of (r / right-05
+                                    :ARG1-of (v / vest-01)))
+                        :time (p5 / pay-01
+                              :ARG1 (d2 / debt
+                                    :mod (a5 / all)
+                                    :poss (p6 / person
+                                          :mod (j / juridical)))
+                              :manner (f / fully))))))
+
+# ::id 81.1
+# ::snt When any liquidation procedure has been concluded, the liquidator must file such fact with the competent government agency.
+(o / obligate-01
+      :ARG0 (p / person
+            :ARG0-of (l / liquidate-01))
+      :ARG1 (f / file-01
+            :ARG1 (f2 / fact
+                  :mod (s / such))
+            :ARG2 (a / agency
+                  :mod (g / goverment-organization
+                        :ARG0-of (g2 / govern-01))
+                  :mod (c / competent)))
+      :time (c2 / conclude-01
+            :ARG1 (p2 / procedure
+                  :topic (l2 / liquidate-01)
+                  :mod (a2 / any))))
+
+# ::id 82.1
+# ::snt The term "Things" as used in this Code shall mean tangible thing.
+(m / mean-01
+      :ARG0 (t / thing
+            :ARG0-of (t2 / term-01)
+            :ARG1-of (u / use-01
+                  :location (c / code
+                        :mod (t3 / this))))
+      :ARG2 (t4 / thing
+            :mod (t5 / tangible)))
+			
+# ::id 86.1
+# ::snt Land and any fixtures thereto are regarded as real estate.
+(r / regard-01
+      :ARG1 (a / and
+            :op1 (l / land)
+            :op2 (f / fixture
+                  :mod (a2 / any)))
+      :ARG2 (e / estate
+            :ARG1-of (r2 / real-04))
+      :mod (t / thereto))
+	  
+# ::id 86.2
+# ::snt Any Thing which is not real estate is regarded as movable.
+(r / regard-01
+      :ARG1 (t / thing
+            :mod (a / any)
+            :mod (e / estate
+                  :ARG1-of (r2 / real-04)))
+      :ARG2 (m / movable))
+	  
+# ::id 86.3
+# ::snt A bearer certificate of claims is deemed to be movable.
+(d / deem-01
+      :ARG0 (c / certificate
+            :topic (c2 / claim)
+            :mod (b / bearer))
+      :ARG1 (m / movable))
+	  
+# ::id 87.1
+# ::snt If the owner of a Thing attaches to it any other Thing he/she owns to make other Thing available for the permanent use of the former Thing, such other Thing which was attached is regarded as appurtenance.
+(r / regard-01
+      :ARG1 t3
+      :ARG2 (a2 / appurtenance)
+      :condition (a3 / attach-01
+            :ARG0 (p / person
+                  :ARG0-of (o / own-01
+                        :ARG1 (t2 / thing)))
+            :ARG2 (t3 / thing
+                  :mod (o2 / other)
+                  :ARG1-of (o3 / own-01
+                        :ARG0 p))
+            :purpose (m / make-02
+                  :ARG0 p
+                  :ARG1 (a4 / available-02
+                        :ARG1 (u / use-01
+                              :ARG1 t2
+                              :mod (p2 / permenant))
+                        :ARG2 t3))))
+						
+# ::id 87.2
+# ::snt Appurtenance shall be subject to the disposition of the principal.
+(s / subject-01
+      :ARG1 (a / appurtenance)
+      :ARG2 (d / dispose-02
+            :ARG0 (p / principal)))
+			
+# ::id 88.1
+# ::snt Products which are obtained from the intended use of a Thing are regarded as Natural Fruits.
+(r / regard-01
+      :ARG1 (p / product
+            :ARG1-of (o / obtain-01
+                  :ARG2 (u / use-01
+                        :ARG1 (t / thing)
+                        :ARG1-of (i2 / intend-01))))
+      :ARG2 (f / fruit
+            :ARG1-of (n / natural-03)))
+			
+# ::id 88.2
+# ::snt Money or other Thing to be obtained in exchange for the use of any Thing are regarded as Legal Fruits.
+(r / regard-01
+      :ARG1 (o / or
+            :op1 (m / money)
+            :op2 (t / thing
+                  :mod (o2 / other))
+            :ARG3-of (e / exchange-01
+                  :ARG1 (u / use-01
+                        :ARG1 (t2 / thing
+                              :mod (a / any)))))
+      :ARG2 (f / fruit
+            :ARG1-of (l / legal-02)))
+			
+# ::id 89.1 
+# ::snt Natural Fruits shall vest in the person who has the right to obtain them when they are severed from the origin.
+(v / vest-01
+      :ARG0 (f / fruit
+            :ARG1-of (n / natural-03))
+      :ARG1 (p / person
+            :ARG1-of (r / right-05
+                  :ARG2 (o / obtain-01
+                        :ARG1 f)))
+      :time (s / serve-02
+            :ARG1 f
+            :source (o2 / origin)))
+	
+# ::id 89.2
+# ::snt Legal Fruits shall be acquired in proportion to the number of days depending on the duration of the right to obtain them.
+(a / acquire-01
+      :ARG1 (f / fruit
+            :ARG1-of (l / legal-02))
+      :duration (t / temporal-quantity
+            :unit (d / day)
+            :ARG0-of (d2 / depend-01
+                  :ARG1 (d3 / duration
+                        :poss (r / right-05
+                              :ARG1 (o / obtain-01
+                                    :ARG1 f))))))
+									
+# ::id 90
+# ::snt A juristic act with any purpose which is against public policy is void.
+(v / void-02
+      :ARG1 (a / act
+            :mod (j / juristic)
+            :poss-of (p / purpose
+                  :mod (a2 / any)
+                  :prep-against (p2 / policy-01
+                        :ARG1-of (p3 / public-02)))))
+						
+# ::id 91
+# ::snt If any party to a juristic act manifests any intention which is inconsistent with a provision in any laws and regulations not related to public policy, such intention shall prevail.
+(p / prevail-02
+      :ARG1 i2
+      :condition (m / manifest-01
+            :ARG1 (p2 / party-01
+                  :ARG1 (a2 / act
+                        :mod (j / juristic))
+                  :mod (a / any))
+            :ARG2 (i2 / intention
+                  :ARG1-of (c / consistent-01 :polarity -
+                        :ARG2 (p3 / provision
+                              :location (a3 / and
+                                    :op1 (l / law)
+                                    :op2 (r / regulation)
+                                    :mod (a4 / any)
+                                    :ARG1-of (r2 / relate-01 :polarity -
+                                          :ARG2 (p4 / policy-01
+                                                :ARG1-of (p5 / public-02)))))))))
+												
+# ::id 92
+# ::snt In cases there is any custom which is inconsistent with a provision in any law or regulation not related to public policy, if it is found that any party to a juristic act has the intention to abide by such custom, such custom shall prevail.
+(p / prevail-02
+      :ARG1 c3
+      :time (c / custom
+            :ARG1-of (c2 / consistent-01 :polarity -
+                  :ARG2 (p2 / provision
+                        :location (a / and
+                              :op1 (l / law)
+                              :op2 (r / regulation)
+                              :mod (a2 / any)
+                              :ARG1-of (r2 / relate-01 :polarity -
+                                    :ARG2 (p3 / policy-01
+                                          :ARG1-of (p4 / public-02))))))
+            :condition (f / find-01
+                  :ARG1 (p5 / party-01
+                        :ARG1 (a3 / act
+                              :mod (j / juristic))
+                        :mod (a4 / any)
+                        :ARG0-of (h / have-03
+                              :ARG1 (i2 / intend-01
+                                    :ARG1 (a5 / abide-01
+                                          :medium (c3 / custom
+                                                :mod (s / such)))))))))
+												
+# ::id 93
+# ::snt The validity of the manifestation of intention shall not be impaired even if the person who makes the manifestation knows that it does not reflect his/her true intention; provided, however, that, in cases the other party knew, or could have known, the true intention of the person who makes the manifestation, such manifestation of intention shall be void.
+(c / contrast-01
+      :ARG1 (i2 / impair-01 :polarity -
+            :ARG1 (v / validity
+                  :poss (m / manifest-01
+                        :poss (i3 / intend-01)))
+            :condition (k / know-01
+                  :ARG0 (p / person
+                        :ARG0-of (m2 / make-01
+                              :ARG1 m))
+                  :ARG1 (r / reflect-01
+                        :ARG1 m
+                        :ARG2 (i4 / intend-01
+                              :poss p))))
+      :ARG2 (m3 / manifest-01
+            :poss (i5 / intend-01)
+            :ARG1-of (v2 / void-02)
+            :time (k2 / know-01
+                  :ARG0 (p2 / party-01
+                        :mod (o / other))
+                  :ARG1 (i6 / intend-01
+                        :ARG1-of (t / true-01)
+                        :poss (p3 / person
+                              :ARG0-of (m4 / make-01
+                                    :ARG1 m3))))))
+									
+# ::id 94.1
+# ::snt Any fictitious manifestation of intention made in collusion with another party(ies) shall be void.
+(m / manifest-01
+      :mod (f / fictitious)
+      :mod (a / any)
+      :poss (i2 / intend-01
+            :ARG1-of (m2 / make-01
+                  :ARG2 (c / collude-01
+                        :ARG0 (p / party-01
+                              :mod (a2 / another)))))
+      :ARG1-of (v / void-01))
+	  
+# ::id 94.2
+# ::snt The nullity of the manifestation of intention pursuant to the provision of the preceding paragraph may not be asserted against a third party without knowledge.
+(a / assert-02
+      :ARG1 (n / nullity
+            :poss (m / manifest-01
+                  :poss (i2 / intend-01
+                        :ARG0-of (p / pursue-01
+                              :ARG1 (p2 / provision
+                                    :poss (p3 / paragraph
+                                          :direction (p4 / preceding)))))))
+      :prep-against (p5 / party-01
+            :ord (o / ordinal-entity :value 3)
+            :prep-without (k / know-01)))
+			
+# ::id 95
+# ::snt Manifestation of intention has no effect when there is a mistake in any element of the juristic act in question; provided, however, that the person who made the manifestation of intention may not assert such nullity by himself/herself if he/she was grossly negligent.
+(c / contrast-01
+      :ARG1 (h / have-03 :polarity -
+            :ARG1 (m / manifest-01
+                  :poss (i2 / intend-01))
+            :ARG2 (a / affect-01)
+            :time (m2 / mistake-02
+                  :ARG1 (e / element
+                        :mod (a2 / any)
+                        :poss (a3 / act
+                              :mod (j / juristic)
+                              :location (q / question-01)))))
+      :ARG2 (a4 / assert-02
+            :ARG0 (p / person
+                  :ARG0-of (m3 / make-01
+                        :ARG1 (m4 / manifest-01
+                              :poss (i3 / intend-01))))
+            :ARG1 (n / nullity)
+            :ARG1-of (p2 / possible-01 :polarity -)
+            :medium p
+            :condition (n2 / neglignent
+                  :domain p
+                  :manner (g / grossly))))
+				  
+# ::id 96.1
+# ::snt Manifestation of intention which is induced by any fraud or duress may be rescinded.
+(m / manifest-01
+      :poss (i2 / intend-01
+            :ARG2-of (i3 / induce-01
+                  :ARG0 (o / or
+                        :op1 (f / fraud)
+                        :op2 (d / duress)
+                        :mod (a / any))))
+      :ARG1-of (r / rescind-01
+            :ARG1-of (p / possible-01)))
+			
+# ::id 96.2
+# ::snt In cases any third party commits any fraud inducing any person to make a manifestation of intention to the other party, such manifestation of intention may be rescinded only if the other party knew such fact.
+(r / rescind-01
+      :ARG1 (m / manifest-01
+            :poss (i2 / intend-01))
+      :ARG1-of (p / possible-01)
+      :condition (k / know-01
+            :ARG0 (p2 / party-01
+                  :mod (o / other))
+            :ARG1 (f / fact
+                  :mod (s / such)))
+      :time (c / commit-01
+            :ARG0 (p3 / party-01
+                  :mod (a / any)
+                  :ord (o2 / ordinal-entity :value 3))
+            :ARG1 (f2 / fraud
+                  :mod (a2 / any)
+                  :ARG0-of (i3 / induce-01
+                        :ARG1 (p4 / person
+                              :mod (a3 / any))
+                        :ARG2 (m2 / make-01
+                              :ARG1 m
+                              :destination p2)))))
+							  
+# ::id 96.3
+# ::snt The rescission of the manifestation of intention induced by the fraud pursuant to the provision of the preceding two paragraphs may not be asserted against a third party without knowledge.
+(a / assert-02
+      :ARG1 (r / rescind-01
+            :ARG1 (m / manifest-01
+                  :poss (i2 / intend-01
+                        :ARG2-of (i3 / induce-01
+                              :ARG0 (f / fraud))
+                        :ARG0-of (p / pursue-01
+                              :poss (p2 / paragraph
+                                    :direction (p3 / preceding :quant 2))))))
+      :prep-against (p4 / party-01
+            :ord (o / ordinal-entity :value 3))
+      :prep-without (k / know-01))
+	  
+# ::id 97.1
+# ::snt Manifestation of intention to a person at a distance shall become effective at the time of the arrival of the notice to the other party.
+(b / become-01
+      :ARG1 (m / manifest-01
+            :ARG2 (p / person)
+            :ARG3 (d / distance)
+            :poss (i2 / intend-01))
+      :ARG2 (e / effective-04)
+      :time (a / arrive-01
+            :ARG1 (n / notice-01)
+            :ARG4 (p2 / party-01
+                  :mod (o / other))))
+				  
+# ::id 97.2
+# ::snt The validity of manifestation of intention to a person at a distance shall not be impaired even if the person who made the manifestation dies or loses his/her capacity to act after the dispatch of the notice.
+(i2 / impair-01 :polarity -
+      :ARG1 (v / validity
+            :poss (m / manifest-01
+                  :ARG2 (p / person)
+                  :ARG3 (d / distance)
+                  :poss (i3 / intend-01)))
+      :condition (o / or
+            :op1 (d2 / die-01
+                  :ARG1 (p2 / person
+                        :ARG0-of (m2 / make-01
+                              :ARG1 (m3 / manifest-01))))
+            :op2 (l / lose-02
+                  :ARG0 p2
+                  :ARG1 (c / capacity
+                        :poss p2
+                        :purpose (a / act-02))
+                  :time (a2 / after
+                        :op1 (d3 / dispatch-01
+                              :ARG0 p2
+                              :ARG1 (n / notice-01))))))
+							  
+# ::id 98.1
+# ::snt Manifestation of intention may be made by means of public notice if the person who makes the manifestation is unable to identify the other party or is unable to identify the whereabouts of the other party.
+(m / make-01
+      :ARG1 (m2 / manifest-01
+            :poss (i2 / intend-01))
+      :ARG1-of (p / possible-01)
+      :medium (m3 / mean
+            :topic (n / notice-01
+                  :ARG1-of (p2 / public-02)))
+      :condition (p4 / possible-01 :polarity -
+            :ARG1 (o / or
+                  :op1 (i3 / identify-01
+                        :ARG0 (p3 / person
+                              :ARG0-of m)
+                        :ARG1 (p5 / party-01
+                              :mod (o2 / other)))
+                  :op2 (i4 / identify-01
+                        :ARG0 p3
+                        :ARG1 (w / whereabouts
+                              :poss p5)))))  
+							  
+# ::id 98.2
+# ::snt The public notice set forth in the preceding paragraph shall be effected by posting the notice at the posting area of the relevant court and publishing the fact of such posting in the Official Gazette at least once in accordance with the applicable provisions of the Code of Civil Procedure (Act No. 109 of 1996) regarding the service of the public notice; provided, however, that the court may, if it finds it suitable, order to post the notice at a posting area of the city office, ward office, or town/village office or any facility equivalent to the above in lieu of the publication in the Official Gazette.
+(c / contrast-01
+      :ARG1 (a / affect-01
+            :ARG0 (a2 / and
+                  :op1 (p4 / post-01
+                        :ARG1 n
+                        :ARG2 (a3 / area
+                              :location-of (p5 / post-01)
+                              :poss-of (c2 / court
+                                    :ARG1-of (r / relevant-01))))
+                  :op2 (p6 / publish-01
+                        :ARG1 (f / fact
+                              :topic p4)
+                        :location (g / gazette
+                              :mod (o / official))
+                        :frequency (a4 / at-least :op1 1))
+                  :ARG1-of (s2 / say-01
+                        :ARG0 (p7 / provision
+                              :mod (a5 / applicable)
+                              :part-of (p8 / procedure
+                                    :mod (c3 / code
+                                          :mod (c4 / civil))
+                                    :location (a6 / act :name (n2 / name :op1 "No." :op2 "109")
+                                          :time (d / date-entity :year 1996))
+                                    :topic (s3 / serve-01
+                                          :poss (n3 / notice-01
+                                                :ARG1-of (p9 / public-02)))))))
+            :ARG1 (n / notice-01
+                  :ARG1-of (p / public-02)
+                  :ARG1-of (s / set-02
+                        :location (p2 / paragraph
+                              :direction (p3 / preceding)))))
+      :ARG2 (o2 / order-01
+            :ARG0 (c5 / court)
+            :ARG1 (p10 / post-01
+                  :ARG1 n
+                  :location (a7 / area
+                        :location-of (p11 / post-01)
+                        :poss (o3 / or
+                              :op1 (o4 / office
+                                    :poss (c6 / city))
+                              :op2 (o5 / office
+                                    :poss (w / ward))
+                              :op3 (o6 / office
+                                    :poss (o7 / or
+                                          :op1 (t / town)
+                                          :op2 (v / village)))
+                              :op4 (f2 / facility
+                                    :mod (a8 / any)
+                                    :ARG0-of (e / equal-01
+                                          :ARG1 (a9 / above))))
+                        :ARG1-of (i2 / instead-of-91
+                              :ARG2 p6)))
+            :condition (f3 / find-01
+                  :ARG0 c5
+                  :ARG1 (s4 / suitable-04
+                        :ARG1 o2))))
+						
+# ::id 98.3
+# ::snt Manifestation of intention by means of public notice is deemed to have arrived at the other party upon elapse of two weeks after the day when the notice was last published in the Official Gazette, or the day on which any posting in lieu of such publication started, whichever comes first; provided, however, that the service of such notice shall not take effect if the person who makes the manifestation is negligent in not identifying the other party or not identifying the whereabouts of the other party.
+(c / contrast-01
+      :ARG1 (d / deem-01
+            :ARG0 (m / manifest-01
+                  :poss (i2 / intend-01)
+                  :medium (m2 / mean
+                        :topic (n / notice-01
+                              :ARG1-of (p / public-02))))
+            :ARG1 (a / arrive-01
+                  :ARG4 (p2 / party-01
+                        :mod (o / other))
+                  :time (a2 / after
+                        :op1 (o3 / or
+                              :op1 (d2 / day
+                                    :time-of (p3 / publish-01
+                                          :ARG1 n
+                                          :location (g / gazette
+                                                :mod (o2 / official))))
+                              :op2 (d3 / day
+                                    :time-of (s / start-01
+                                          :ARG0 (p4 / post-01
+                                                :mod (a3 / any)
+                                                :ARG1-of (i3 / instead-of-91
+                                                      :ARG2 p3))))
+                              :ARG1-of (c2 / come-01
+                                    :ord (o4 / ordinal-entity :value 1)))
+                        :quant (t / temporal-quantity :quant 2
+                              :unit (w / week)))))
+      :ARG2 (t2 / take-01 :polarity -
+            :ARG0 (s2 / serve-01
+                  :poss n)
+            :ARG1 (a4 / affect-01)
+            :condition (n2 / negligent
+                  :domain-of (p5 / person
+                        :ARG0-of (m3 / make-01
+                              :ARG1 m))
+                  :topic (o5 / or
+                        :op1 (i4 / identify-01 :polarity -
+                              :ARG1 p2)
+                        :op2 (i5 / identify-01 :polarity -
+                              :ARG1 (w2 / whereabouts
+                                    :poss p2))))))
+									
+# ::id 98.4
+# ::snt The procedure regarding the public notice shall be subject to the jurisdiction of the summary court which has jurisdiction over the area where the person who makes the manifestation of intention has his/her domicile in cases he/she is unable to identify the other party, or over the area of the last known domicile of the other party in cases the whereabouts of the other party cannot be identified.
+(s / subject-01
+      :ARG1 (p / procedure
+            :ARG1-of (r / regard-01
+                  :ARG2 (n / notice-01
+                        :ARG1-of (p2 / public-02))))
+      :ARG2 (j / jurisdiction
+            :poss (c / court
+                  :mod (s2 / summary)
+                  :ARG0-of (h / have-03
+                        :ARG1 (j2 / jurisdiction)
+                        :location (o2 / or
+                              :op1 (o / over
+                                    :op1 (a / area
+                                          :location-of (h2 / have-03
+                                                :ARG0 (p3 / person
+                                                      :ARG0-of (m / make-01
+                                                            :ARG1 (m2 / manifest-01
+                                                                  :poss (i2 / intend-01))))
+                                                :ARG1 (d / domicile
+                                                      :poss p3)))
+                                    :condition (p4 / possible-01
+                                          :ARG1 (i3 / identify-01
+                                                :ARG0 p3
+                                                :ARG1 (p5 / party-01
+                                                      :mod (o3 / other)))))
+                              :op2 (o4 / over
+                                    :op1 (a2 / area
+                                          :location-of (d2 / domicile
+                                                :ARG1-of (k / know-01
+                                                      :ord (o5 / ordinal-entity :value "-1"))
+                                                :poss (p6 / party-01
+                                                      :mod (o6 / other))))
+                                    :condition (i4 / identify-01
+                                          :ARG1 (w / whereabouts
+                                                :poss p6))))))))
+												
+# ::id 98.5
+# ::snt The court must require the person who makes the manifestation of intention to prepay the expenses regarding the public notice.
+(o / obligate-01
+      :ARG0 (c / court)
+      :ARG1 (r / require-01
+            :ARG1 (p2 / prepay-01
+                  :ARG1 (e / expense
+                        :ARG1-of (r2 / regard-01
+                              :ARG2 (n / notice-01
+                                    :ARG1-of (p3 / public-02)))))
+            :ARG2 (p / person
+                  :ARG0-of (m / make-01
+                        :ARG1 (m2 / manifest-01
+                              :poss (i2 / intend-01))))))
+							  
+# ::id 98.2.1
+# ::snt In cases the other party to the manifestation of intention is a minor or an adult ward at the time when the other party receives such manifestation of intention, the person who made the manifestation of intention may not assert his/her manifestation of intention against such other party; provided, however, that, this shall not apply after the statutory agent of such other party has acquired the knowledge of such manifestation of intention.
+(c / contrast-01
+      :ARG1 (a / assert-02 :polarity -
+            :ARG0 (p / person
+                  :ARG0-of (m3 / make-01
+                        :ARG1 m))
+            :ARG1 m
+            :condition (p2 / party-01
+                  :mod (o / other)
+                  :ARG2-of (m / manifest-01
+                        :poss (i2 / intend-01)
+                        :poss p)
+                  :domain (o2 / or
+                        :op1 (m2 / minor-02
+                              :ARG1 (p3 / person))
+                        :op2 (w / ward
+                              :mod (a2 / adult))
+                        :time (r / receive-01
+                              :ARG0 p2
+                              :ARG1 m)))
+            :prep-against p2)
+      :ARG2 (a3 / apply-02
+            :ARG1 a
+            :time (a4 / after
+                  :op1 (a5 / acquire-01
+                        :ARG0 (a6 / agent
+                              :mod (s / statutory)
+                              :poss p2)
+                        :ARG1 (k / know-01
+                              :poss m)))))
